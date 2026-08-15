@@ -39,6 +39,8 @@ Defining a workflow in which the model can operate, test, and iterate is a key d
 
 定义一种让模型可以在其中操作、测试和迭代的工作流，是自动化设计的关键。Karpathy 的 autoresearch 仓库（https://github.com/karpathy/autoresearch）是构建此类工作流的一个简洁范例。常见的工作流遵循一个目标导向的循环：规划、执行、观察/测试、改进，然后再次执行，直到目标达成。该过程可能会主动向用户发起请求，以澄清任务说明或执行偏好。
 
+![简化的 Codex 智能体循环：智能体调用工具，工具响应影响模型的下一次生成](images/openai-agent-loop.png)
+
 > A simplified Codex agent loop: the agent calls tools and tool responses affect the model's next generation. (Image source: OpenAI codex agent post)
 > 一个简化的 Codex 智能体循环：智能体调用工具，工具响应会影响模型的下一次生成。
 > （图片来源：OpenAI codex agent 博客）
@@ -75,6 +77,8 @@ The key design choice is to make parallelism explicit and inspectable. If subage
 The core interface of mainstream coding agents has become stabilized across Claude Code, Codex, OpenCode, and Cursor-style agents. They commonly use a loop like:
 
 主流编码智能体的核心接口已经在 Claude Code、Codex、OpenCode 和 Cursor 风格的智能体中趋于稳定。它们通常使用这样的循环：
+
+![主流编码智能体常用的 agent 循环：调用工具，工具结果回传给模型生成下一次输出](images/coding-harness-loop.png)
 
 With access to a set of tools, the coding agent is able to develop and debug issues in a given repository, similar to how human developers are equipped with IDEs.
 
@@ -156,6 +160,8 @@ Agentic Context Engineering (ACE; Zhang et al. 2025) treats context as an evolvi
 - Curator: updates the structured context with incremental, itemized entries.
 - 策展器（Curator）：以增量的、逐条的方式更新结构化上下文。
 
+![智能体上下文工程（ACE）的框架](images/ace.png)
+
 > The framework of Agentic Context Engineering (ACE). (Image source: Zhang et al. 2025)
 > 智能体上下文工程（ACE）的框架。（图片来源：Zhang et al. 2025）
 
@@ -194,6 +200,8 @@ Then a base-level context engineer executes the skill $s_k$ and learns the conte
 
 然后，基础层的上下文工程师执行技能 $s_k$，并在当前技能的引导下，从运行反馈 $\mathcal{R}_k$ 中学习上下文函数：$c_k=\text{engineer}(\tau,s_k;c_{k-1}^*,\mathcal{R}_k)$。
 
+![元上下文工程（MCE）的框架：元层技能进化搜索上下文管理机制，基础层优化任务上下文](images/mce.png)
+
 > The framework of Meta Context Engineering (MCE): meta-level skill evolution searches over context-management mechanisms, while the base level optimizes the task context. (Image source: Ye et al. 2026)
 > 元上下文工程（MCE）的框架：元层技能进化搜索上下文管理机制，而基础层优化任务上下文。（图片来源：Ye et al. 2026）
 
@@ -208,6 +216,8 @@ $$
 Meta-Harness (Lee et al. 2026) moves another level deeper: the optimized object is the code that determines and optimizes what information should be stored, retrieved, and presented to the model. “Meta-” in its name means it is a harness for optimizing harnesses.
 
 Meta-Harness（Lee et al. 2026）再深入了一层：被优化的对象是决定并优化"应存储、检索和呈现给模型的哪些信息"的代码。其名称中的"Meta-"意味着它是用来优化 harness 的 harness。
+
+![Meta-Harness 的外层循环优化算法](images/meta-harness-outer-loop.png)
 
 > The Meta-Harness outer-loop optimization algorithm. (Image source: Lee et al. 2026)
 > Meta-Harness 的外层循环优化算法。（图片来源：Lee et al. 2026）
@@ -225,6 +235,8 @@ The proposer for creating a new harness is itself a coding agent and the final o
 - The mete-harness loop iteratively creates new harnesses, and only qualified ones are kept.
 - Meta-harness 循环迭代地创建新 harness，只保留合格的。
 
+![Meta-Harness 的表现：（左）少量迭代下的文本分类，（右）TerminalBench-2](images/meta-harness.png)
+
 > The performance of Meta-Harness on (Left) text classification with a small number of iterations and (Right) TerminalBench-2. Note that the search in the TerminalBench-2 experiment is initialized from Terminus-KIRA and Terminus-2, two very strong harnesses. (Image source: Lee et al. 2026)
 > Meta-Harness 在（左）少量迭代下的文本分类，和（右）TerminalBench-2 上的表现。注意 TerminalBench-2 实验中的搜索是从 Terminus-KIRA 和 Terminus-2 这两个非常强的 harness 初始化的。（图片来源：Lee et al. 2026）
 
@@ -239,6 +251,8 @@ Workflow design in harness engineering can be handcrafted by domain experts. Tak
 
 Harness 工程中的工作流设计可以由领域专家手工完成。以自动研究为例，已经提出了并测试了各种框架。AI Scientist 系统（Lu et al. 2026）构建了一条流水线：提出研究想法、编写代码、运行实验、分析结果、撰写论文稿件、进行同行评审。Meng et al.（2026）在 ScientistOne 中把可验证性作为核心设计约束，其中每一个主张（引用、数值、方法论、结论）都必须追溯到证据来源，并通过"证据链"（Chain-of-Evidence）检查进行审计。
 
+![AI Scientist 流水线：想法生成、实验、论文写作与评审](images/ai-scientist.png)
+
 > AI Scientist pipeline for idea generation, experimentation, paper writing, and review. (Image source: Lu et al. 2026)
 > AI Scientist 流水线：想法生成、实验、论文写作与评审。（图片来源：Lu et al. 2026）
 
@@ -249,6 +263,8 @@ Autodata 智能体（Kulikov et al. 2026）被设计为一位数据科学家，�
 In Autodata, the challenger prompt is updated iteratively according to feedback from the solvers and verifier. The limitation here is that synthesized tasks are used to fine-tune weak solvers but not strong solvers; if the loop cannot iteratively improve the strong model, it is more like indirect distillation over a generated prompt distribution, with less RSI flavor.
 
 在 Autodata 中，挑战者提示词会根据求解器和验证器的反馈进行迭代更新。这里的局限是：合成任务被用来微调弱求解器，而非强求解器；如果循环无法迭代地改进强模型，它就更像是在生成的提示词分布上进行间接蒸馏，RSI 的味道较弱。
+
+![Autodata 智能体工作流设计：围绕挑战者、求解器和验证器角色生成合成训练与评估数据](images/autodata.png)
 
 > Autodata agentic workflow design for generating synthetic training and evaluation data around challenger, solver, and verifier roles. (Image source: Kulikov et al. 2026)
 > Autodata 智能体工作流设计：围绕挑战者、求解器和验证器角色生成合成训练与评估数据。（图片来源：Kulikov et al. 2026）
@@ -275,6 +291,8 @@ The design space for workflow is enormous, and naturally we can think of workflo
 - Repeat steps 2-3 until the maximum iteration count is reached.
 - 重复步骤 2-3，直到达到最大迭代次数。
 
+![智能体系统自动化设计（ADAS）的示意图](images/adas.png)
+
 > Illustration of Automated Design of Agentic Systems (ADAS). (Image source: Hu et al. 2025)
 > 智能体系统自动化设计（ADAS）的示意图。（图片来源：Hu et al. 2025）
 
@@ -300,12 +318,16 @@ AFlow（Zhang et al. 2025）将智能体工作流表示为图：节点是调用 
 - Repeat steps 2-5 and stop when the top-$k$ average score plateaus or hit the budget.
 - 重复步骤 2-5，直到 top-$k$ 平均得分趋于平稳或触及预算。
 
+![AFlow 在工作流候选树上的优化过程](images/aflow.png)
+
 > AFlow optimization process over a tree of workflow candidates. (Image source: Zhang et al. 2025)
 > AFlow 在工作流候选树上的优化过程。（图片来源：Zhang et al. 2025）
 
 Experiments of AFlow in QA, code, and math tasks showed decent improvement of AFlow over manually designed workflows and ADAS.
 
 AFlow 在 QA、代码和数学任务上的实验显示，它相比手工设计的工作流和 ADAS 有可观的改进。
+
+![AFlow 与手工方法及 ADAS 的对比实验](images/aflow-exp.png)
 
 > AFlow experiments in comparison to manual methods and ADAS. (Image source: Zhang et al. 2025)
 > AFlow 与手工方法及 ADAS 的对比实验。（图片来源：Zhang et al. 2025）
@@ -337,12 +359,16 @@ $$
 I_t=I_{t-1}(\hat{u},I_{t-1};M)
 $$
 
+![自学优化器（STOP）的算法](images/STOP-algo.png)
+
 > Algorithm of Self-Taught Optimizer (STOP). (Image source: Zelikman et al. 2023)
 > 自学优化器（STOP）的算法。（图片来源：Zelikman et al. 2023）
 
 In their experiments, the improved improver discovered various strategies, such as genetic algorithms, decomposing and improving parts, multi-armed prompt bandits, simulated annealing, varying temperature, and beam/tree search. This is analogous to how a harness workflow can be represented as an object for optimization.
 
 在他们的实验中，改进后的改进器发现了各种策略，例如遗传算法、分解并改进各部分、多臂提示词老虎机（bandit）、模拟退火、温度变化以及束搜索/树搜索。这与 harness 工作流可以作为优化对象来表示的方式类似。
+
+![STOP 发现的一些自我改进策略示例](images/STOP-patterns.png)
 
 > Examples of self-improvement strategies discovered by STOP. (Image source: Zelikman et al. 2023)
 > STOP 发现的一些自我改进策略示例。（图片来源：Zelikman et al. 2023）
@@ -355,12 +381,16 @@ Lin et al. (2026) investigated the dependency of harness evolution on model capa
 
 Lin et al.（2026）更详细地研究了 harness 进化对模型能力的依赖。他们解耦了两个维度：（1）harness 更新能力（harness-updating），指产生有用的 harness 编辑的能力；（2）harness 收益能力（harness-benefit），指利用更新后的 harness 来更好地完成任务求解的能力。有趣的是，从 Qwen3.5-9B 到 Claude Opus 4.6，不同大小和核心智能水平的模型，在他们的实验中表现出相似的 harness 更新能力；9B 的 harness 提议者/进化器能够写出与 Opus 程序同构的技能。而要最好地利用 harness，模型需要正确且及时地调用技能/工具，并擅长长周期的指令跟随。
 
+![主要结果：（A）harness 更新能力持平；（B）harness 收益能力非单调，中等层级模型受益最大](images/harness-update.png)
+
 > Main results: (A) harness updating capability is measured flat across a range of models from Qwen2-32B to Opus 4.6; (B) harness benefit capability is non-monotonic where middle tier models benefit the most. (Image source: Lin et al. 2026)
 > 主要结果：（A）从 Qwen2-32B 到 Opus 4.6 的一系列模型，harness 更新能力被测量为持平；（B）harness 收益能力是非单调的，中等层级的模型受益最大。（图片来源：Lin et al. 2026）
 
 A more recent work, Self-Harness (Zhang et al. 2026), relies on LLM agents to improve their own harness via a propose-evaluate-accept loop.
 
 更近期的研究 Self-Harness（Zhang et al. 2026）依赖 LLM 智能体通过"提出-评估-接受"循环来改进自身的 harness。
+
+![Self-Harness 使用弱点挖掘、有界 harness 提议和验证的循环来更新 harness](images/self-harness.png)
 
 > Self-Harness uses a loop of weakness mining, bounded harness proposal, and validation to update a harness. (Image source: Zhang et al. 2026)
 > Self-Harness 使用弱点挖掘、有界 harness 提议和验证的循环来更新 harness。（图片来源：Zhang et al. 2026）
@@ -476,6 +506,8 @@ Novikov et al. (2025) introduced AlphaEvolve as a coding-agent evolutionary sear
 
 Novikov et al.（2025）提出了 AlphaEvolve，一个编码智能体进化式搜索系统：它维护一个候选程序池，并提示冻结的 LLM 生成用于改进的 diff。随着系统反复评估子程序并保留成功的程序，它能够及时地发现更好的解决方案。
 
+![AlphaEvolve 的工作原理](images/alphaevolve.png)
+
 > How AlphaEvolve works. (Image source: Novikov et al. 2025)
 > AlphaEvolve 的工作原理。（图片来源：Novikov et al. 2025）
 
@@ -495,6 +527,8 @@ AlphaEvolve 的设计中有几个值得注意的细节：
 Ablations show the evolution procedure, context in prompts, meta-prompts, full-file evolution and the use of stronger LLMs.
 
 消融实验展示了进化过程、提示词中的上下文、元提示词、全文件进化以及使用更强 LLM 的价值。
+
+![消融实验展示了 AlphaEvolve 中若干设计的价值](images/alphaevolve-plot.png)
 
 > Ablations show the value of everal designs in AlphaEvolve. (Image source: Novikov et al. 2025)
 > 消融实验展示了 AlphaEvolve 中若干设计的价值。（图片来源：Novikov et al. 2025）
@@ -558,6 +592,8 @@ SIA（Hebbar et al. 2026）是早期把 harness 改进和模型参数更新结�
 
 - Feedback-Agent: chooses whether to update the harness or the model weights based on recent trajectories.
 - 反馈智能体（Feedback-Agent）：根据最近的轨迹，决定是更新 harness 还是更新模型权重。
+
+![SIA 中的反馈智能体决定下一次迭代的类型](images/SIA.png)
 
 > The Feedback-Agent in SIA decides the next iteration type. (Image source: Hebbar et al. 2026)
 > SIA 中的反馈智能体决定下一次迭代的类型。（图片来源：Hebbar et al. 2026）

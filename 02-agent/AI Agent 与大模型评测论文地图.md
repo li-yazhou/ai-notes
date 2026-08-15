@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-06-29
+updated: 2026-08-15
 status: active
 tags:
   - index/papers
@@ -11,7 +11,7 @@ tags:
 
 # AI Agent 与大模型评测论文地图
 
-> 更新时间：2026-06-29
+> 更新时间：2026-08-15
 > 覆盖范围：`02-agent`（41 篇）与 `03-basemodel`（22 篇）共 63 篇论文笔记（61 篇 arXiv + 2 篇 OpenAI technical/preprint）
 
 ---
@@ -118,7 +118,7 @@ tags:
 
 | 论文 | 年份 | 优先级 | 阅读方式 | 关键标签 |
 |---|---:|---|---|---|
-| [[2210-ReAct Synergizing Reasoning and Acting in Language Models\|ReAct: Synergizing Reasoning and Acting in Language Models]] | 2022 | `p0` | `deep` | `agent/react-loop, agent/tool-use, method/reason-act` |
+| [[2210-ReAct Synergizing Reasoning and Acting in Language Models\|ReAct: Synergizing Reasoning and Acting in Language Models]]（[[2210-ReAct Synergizing Reasoning and Acting in Language Models-bilingual\|中英对照翻译]]） | 2022 | `p0` | `deep` | `agent/react-loop, agent/tool-use, method/reason-act` |
 
 ### 5. 反思、记忆与自我改进
 

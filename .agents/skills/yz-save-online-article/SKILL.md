@@ -1,5 +1,5 @@
 ---
-name: save-online-article
+name: yz-save-online-article
 description: 保存在线文章到本地 Obsidian 笔记库（vault）。当用户给出一篇文章链接（微信公众号 mp.weixin.qq.com 或任意网页）并想"保存/收藏/备份/存档/抄录这篇到本地笔记"时使用。自动抓取正文、提取标题/作者/发布时间、把图片下载到 images/ 子目录、转为 Markdown，生成 YYMM-文章名 文件夹与同名 md 文件，md 开头列出原文标题/链接/作者/发布时间等元信息。即使用户没明说"保存"，只要是要"把这篇存下来/收藏到笔记"，都触发本 skill。
 ---
 

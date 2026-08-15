@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <defs>
+    <style>
+      .bg{fill:#fbfaf7}.title{font:700 40px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}.sub{font:400 20px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#675f55}.label{font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}.body{font:400 18px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#3f3f46}.small{font:400 15px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#71717a}.card{fill:#fff;stroke:#ded7cb;stroke-width:2}.local{fill:#fff3df;stroke:#deb76e}.provider{fill:#eef7ff;stroke:#87bde8}.safe{fill:#eefcf4;stroke:#81c995}.manager{fill:#f4edff;stroke:#aa8deb}.arrow{stroke:#6b7280;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#6b7280"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="780"/>
+  <text x="70" y="72" class="title">Hermes-Agent：显式记忆 + 外部 Memory Provider</text>
+  <text x="70" y="110" class="sub">本地文件保存高信任事实，外部 Provider 负责语义召回与跨会话同步。</text>
+
+  <rect x="70" y="170" width="300" height="150" rx="16" class="card local"/>
+  <text x="95" y="214" class="label">内置显式记忆</text>
+  <text x="95" y="252" class="body">MEMORY.md / USER.md</text>
+  <text x="95" y="282" class="small">用户偏好、项目约定、长期事实</text>
+
+  <rect x="70" y="410" width="300" height="145" rx="16" class="card safe"/>
+  <text x="95" y="453" class="label">Frozen Snapshot</text>
+  <text x="95" y="490" class="body">会话开始时注入系统提示</text>
+  <text x="95" y="520" class="small">中途写文件，不改当前 prefix</text>
+
+  <path d="M220 320 V410" class="arrow"/>
+
+  <rect x="470" y="255" width="285" height="170" rx="16" class="card manager"/>
+  <text x="495" y="300" class="label">MemoryManager</text>
+  <text x="495" y="337" class="body">统一编排记忆生命周期</text>
+  <text x="495" y="367" class="small">prefetch / sync / session switch</text>
+  <text x="495" y="397" class="small">限制一个外部 provider</text>
+
+  <path d="M370 482 C425 470 440 400 470 370" class="arrow"/>
+
+  <rect x="850" y="150" width="280" height="120" rx="16" class="card provider"/>
+  <text x="875" y="192" class="label">Prefetch</text>
+  <text x="875" y="228" class="body">每轮前语义召回</text>
+
+  <rect x="850" y="330" width="280" height="120" rx="16" class="card provider"/>
+  <text x="875" y="372" class="label">Sync Turn</text>
+  <text x="875" y="408" class="body">每轮后同步到后端</text>
+
+  <rect x="850" y="550" width="280" height="120" rx="16" class="card safe"/>
+  <text x="875" y="592" class="label">Safety Fence</text>
+  <text x="875" y="628" class="body">&lt;memory-context&gt; + scrubber</text>
+
+  <path d="M755 310 C810 275 815 220 850 210" class="arrow"/>
+  <path d="M755 360 C810 365 815 385 850 390" class="arrow"/>
+  <path d="M690 425 C755 520 805 590 850 610" class="arrow"/>
+
+  <rect x="470" y="575" width="285" height="90" rx="16" class="card"/>
+  <text x="495" y="610" class="label">Provider 生态</text>
+  <text x="495" y="640" class="small">holographic / honcho / mem0 / supermemory / hindsight ...</text>
+
+  <text x="70" y="748" class="sub">关键词：本地高信任记忆、外部语义召回、单 provider、frozen snapshot、安全围栏。</text>
+</svg>

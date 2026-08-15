@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 42px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}.sub{font:400 21px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#5b6678}.h{font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}.body{font:400 17px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#344054}.small{font:400 15px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#667085}.card{fill:#fff;stroke:#d9e1ee;stroke-width:2}.n{fill:#eef6ff}.o{fill:#edfdf4}.m{fill:#fff5e6}.c{fill:#f3edff}.axis{stroke:#cbd5e1;stroke-width:2}.dot{stroke:#fff;stroke-width:3}.legend{font:600 16px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#344054}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="900"/>
+  <text x="70" y="76" class="title">AI Agent 记忆系统横向对比</text>
+  <text x="70" y="116" class="sub">从“显式文件”到“自动巩固”，不同方案在透明性、检索能力、安全边界和插件化上各有侧重。</text>
+
+  <rect x="70" y="165" width="300" height="235" rx="18" class="card n"/>
+  <text x="100" y="212" class="h">nanobot</text>
+  <text x="100" y="252" class="body">history.jsonl + Dream</text>
+  <text x="100" y="285" class="body">SOUL.md / USER.md / MEMORY.md</text>
+  <text x="100" y="325" class="small">优势：历史压缩到长期记忆的链路清晰</text>
+  <text x="100" y="355" class="small">关键词：Consolidator、Dream、GitStore</text>
+
+  <rect x="400" y="165" width="300" height="235" rx="18" class="card o"/>
+  <text x="430" y="212" class="h">OpenClaw</text>
+  <text x="430" y="252" class="body">Markdown + hybrid search</text>
+  <text x="430" y="285" class="body">memory-core + 可替换后端</text>
+  <text x="430" y="325" class="small">优势：工程化检索、工具召回、插件化</text>
+  <text x="430" y="355" class="small">关键词：SQLite、FTS、embedding、dreaming</text>
+
+  <rect x="730" y="165" width="300" height="235" rx="18" class="card m"/>
+  <text x="760" y="212" class="h">Hermes-Agent</text>
+  <text x="760" y="252" class="body">显式文件 + MemoryProvider</text>
+  <text x="760" y="285" class="body">prefetch / sync / safety fence</text>
+  <text x="760" y="325" class="small">优势：安全边界细，provider 生命周期完整</text>
+  <text x="760" y="355" class="small">关键词：frozen snapshot、scrubber</text>
+
+  <rect x="1060" y="165" width="270" height="235" rx="18" class="card c"/>
+  <text x="1090" y="212" class="h">Codex / Claude</text>
+  <text x="1090" y="252" class="body">AGENTS.md / CLAUDE.md</text>
+  <text x="1090" y="285" class="body">自动 Memories 作为补充</text>
+  <text x="1090" y="325" class="small">优势：规则显式、可版本化</text>
+  <text x="1090" y="355" class="small">关键词：项目记忆、跨线程偏好</text>
+
+  <rect x="70" y="475" width="1260" height="300" rx="18" class="card"/>
+  <text x="100" y="525" class="h">能力侧重点</text>
+  <line x1="170" y1="690" x2="1230" y2="690" class="axis"/>
+  <line x1="170" y1="590" x2="170" y2="690" class="axis"/>
+  <text x="150" y="725" class="small">显式规则</text>
+  <text x="490" y="725" class="small">检索召回</text>
+  <text x="825" y="725" class="small">自动巩固</text>
+  <text x="1165" y="725" class="small">插件生态</text>
+  <text x="95" y="596" class="small">强</text>
+  <text x="95" y="693" class="small">弱</text>
+
+  <circle cx="220" cy="640" r="13" fill="#60a5fa" class="dot"/><text x="240" y="646" class="legend">nanobot</text>
+  <circle cx="545" cy="605" r="13" fill="#22c55e" class="dot"/><text x="565" y="611" class="legend">OpenClaw</text>
+  <circle cx="865" cy="615" r="13" fill="#f59e0b" class="dot"/><text x="885" y="621" class="legend">Hermes-Agent</text>
+  <circle cx="1170" cy="645" r="13" fill="#8b5cf6" class="dot"/><text x="1190" y="651" class="legend">Codex / Claude</text>
+
+  <path d="M220 640 C390 570 660 560 865 615 C1010 650 1100 665 1170 645" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="8 8"/>
+
+  <rect x="115" y="800" width="1170" height="56" rx="14" fill="#fff" stroke="#d9e1ee" stroke-width="2"/>
+  <text x="145" y="835" class="body">共同趋势：透明文件作为可信层，索引/Provider 提升召回，Dream/Consolidation 负责长期沉淀，审计与回滚成为刚需。</text>
+</svg>

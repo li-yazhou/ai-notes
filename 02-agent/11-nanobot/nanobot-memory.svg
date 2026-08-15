@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <defs>
+    <style>
+      .bg{fill:#f7f8fb}.title{font:700 40px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}.sub{font:400 20px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#5a667a}.label{font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}.body{font:400 18px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#324056}.small{font:400 15px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#627086}.card{fill:#fff;stroke:#d9dfeb;stroke-width:2}.blue{fill:#e8f1ff;stroke:#8bb7ff}.green{fill:#e8f8ee;stroke:#84c99b}.amber{fill:#fff4df;stroke:#e5bd67}.violet{fill:#f0ebff;stroke:#a994ef}.arrow{stroke:#66758d;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#66758d"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="780"/>
+  <text x="70" y="72" class="title">nanobot：从历史压缩到 Dream 巩固</text>
+  <text x="70" y="110" class="sub">短期会话先压缩成结构化历史，再由 Dream 提炼为长期记忆文件。</text>
+
+  <rect x="70" y="170" width="250" height="140" rx="16" class="card blue"/>
+  <text x="95" y="215" class="label">session.messages</text>
+  <text x="95" y="252" class="body">当前会话上下文</text>
+  <text x="95" y="282" class="small">短期、活跃、随对话增长</text>
+
+  <rect x="455" y="170" width="290" height="140" rx="16" class="card green"/>
+  <text x="480" y="215" class="label">Consolidator</text>
+  <text x="480" y="252" class="body">压缩旧上下文</text>
+  <text x="480" y="282" class="small">在上下文压力下生成摘要</text>
+
+  <rect x="875" y="170" width="255" height="140" rx="16" class="card amber"/>
+  <text x="900" y="215" class="label">history.jsonl</text>
+  <text x="900" y="252" class="body">追加式历史摘要</text>
+  <text x="900" y="282" class="small">cursor 驱动，机器友好</text>
+
+  <path d="M320 240 H455" class="arrow"/>
+  <path d="M745 240 H875" class="arrow"/>
+
+  <rect x="455" y="410" width="290" height="145" rx="16" class="card violet"/>
+  <text x="480" y="455" class="label">Dream</text>
+  <text x="480" y="492" class="body">读取新历史，做小范围编辑</text>
+  <text x="480" y="522" class="small">解释、去重、沉淀长期事实</text>
+
+  <path d="M1000 310 C1000 375 775 380 690 410" class="arrow"/>
+
+  <rect x="115" y="615" width="210" height="86" rx="14" class="card"/>
+  <text x="145" y="650" class="label">SOUL.md</text>
+  <text x="145" y="680" class="small">Agent 风格与语气</text>
+
+  <rect x="370" y="615" width="210" height="86" rx="14" class="card"/>
+  <text x="400" y="650" class="label">USER.md</text>
+  <text x="400" y="680" class="small">用户偏好与画像</text>
+
+  <rect x="625" y="615" width="240" height="86" rx="14" class="card"/>
+  <text x="655" y="650" class="label">MEMORY.md</text>
+  <text x="655" y="680" class="small">项目事实与长期上下文</text>
+
+  <rect x="910" y="615" width="190" height="86" rx="14" class="card"/>
+  <text x="940" y="650" class="label">GitStore</text>
+  <text x="940" y="680" class="small">审计与恢复</text>
+
+  <path d="M520 555 C460 590 335 590 250 615" class="arrow"/>
+  <path d="M570 555 C535 590 500 590 475 615" class="arrow"/>
+  <path d="M630 555 C680 590 710 590 745 615" class="arrow"/>
+  <path d="M700 555 C805 590 910 590 990 615" class="arrow"/>
+
+  <text x="70" y="748" class="sub">关键词：短期上下文、历史压缩、Dream、长期文件、可审计版本。</text>
+</svg>

@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="07---记忆系统实战">07 - 记忆系统实战</h1>
+<blockquote>
+<p><strong>阅读时间</strong>：约 2 小时<br><strong>前置知识</strong>：<a href="../06-install-and-hands-on/README.md">06 - 安装与上手</a><br><strong>学习目标</strong>：深入理解 Nanobot 的双层记忆架构、MemoryConsolidator 压缩机制、会话管理，掌握面试高频考点</p>
+</blockquote>
+<hr>
+<p><img alt="记忆系统漫画" src="../../comics/04-memory-system.png"></p>
+<p><em>Nanobot 双层记忆：MEMORY.md（记忆面包 = 长期记忆）+ HISTORY.md（历史时间线）</em></p>
+<h2 class="atx" id="目录">目录</h2>
+<ul>
+<li><a href="#71-%E4%B8%BA%E4%BB%80%E4%B9%88-agent-%E9%9C%80%E8%A6%81%E8%AE%B0%E5%BF%86">7.1 为什么 Agent 需要记忆</a></li>
+<li><a href="#72-%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8C%91%E6%88%98">7.2 记忆系统的挑战</a></li>
+<li><a href="#73-nanobot-%E5%8F%8C%E5%B1%82%E8%AE%B0%E5%BF%86%E6%9E%B6%E6%9E%84">7.3 Nanobot 双层记忆架构</a></li>
+<li><a href="#74-memorymd--%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86">7.4 MEMORY.md —— 长期记忆</a></li>
+<li><a href="#75-historymd--%E5%8E%86%E5%8F%B2%E6%97%B6%E9%97%B4%E7%BA%BF">7.5 HISTORY.md —— 历史时间线</a></li>
+<li><a href="#76-memoryconsolidator-%E5%8E%8B%E7%BC%A9%E6%9C%BA%E5%88%B6">7.6 MemoryConsolidator 压缩机制</a></li>
+<li><a href="#77-%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86session-%E4%BC%9A%E8%AF%9D%E5%8E%86%E5%8F%B2">7.7 短期记忆：Session 会话历史</a></li>
+<li><a href="#78-%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F%E5%AE%8C%E6%95%B4%E6%95%B0%E6%8D%AE%E6%B5%81">7.8 记忆系统完整数据流</a></li>
+<li><a href="#79-%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94">7.9 记忆系统与其他框架对比</a></li>
+<li><a href="#710-%E5%AE%9E%E6%88%98%E7%BB%83%E4%B9%A0">7.10 实战练习</a></li>
+<li><a href="#711-%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%A2%98">7.11 面试高频题</a></li>
+<li><a href="#712-%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93">7.12 本章小结</a></li>
+</ul>
+<hr>
+<h2 class="atx" id="71-为什么-agent-需要记忆">7.1 为什么 Agent 需要记忆</h2>
+<h3 class="atx" id="711-无记忆-agent-的问题">7.1.1 无记忆 Agent 的问题</h3>
+<p>想象一个没有记忆的助手：</p>
+<pre><code class="fenced-code-block">对话 1:
+You: 我叫张三，是一名后端工程师
+Agent: 你好张三！很高兴认识你。
+
+对话 2（新会话）:
+You: 我之前说我叫什么名字？
+Agent: 抱歉，我不知道你的名字，这是我们的第一次对话。</code></pre>
+<p>这就是纯 LLM 的局限 —— <strong>没有跨会话记忆</strong>。每次对话都是全新的开始。</p>
+<h3 class="atx" id="712-记忆赋予-agent-的能力">7.1.2 记忆赋予 Agent 的能力</h3>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>无记忆</th>
+<th>有记忆</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>跨会话延续</td>
+<td>每次重新开始</td>
+<td>记住之前的对话</td>
+</tr>
+<tr>
+<td>用户偏好</td>
+<td>每次重新询问</td>
+<td>自动适应</td>
+</tr>
+<tr>
+<td>任务延续</td>
+<td>无法暂停继续</td>
+<td>支持长期项目</td>
+</tr>
+<tr>
+<td>知识积累</td>
+<td>不积累</td>
+<td>持续学习</td>
+</tr>
+<tr>
+<td>上下文理解</td>
+<td>仅当前对话</td>
+<td>理解历史背景</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="713-记忆系统的核心矛盾">7.1.3 记忆系统的核心矛盾</h3>
+<p>设计 Agent 记忆系统需要平衡三个矛盾：</p>
+<pre><code class="fenced-code-block">      完整性               成本
+   (记住所有)          (节省 token)
+       │                   │
+       └────── 矛盾 ──────┘
+               │
+            实时性
+        (快速检索)</code></pre>
+<ol>
+<li><strong>完整性 vs 成本</strong>：记住所有信息需要巨大的上下文窗口，费用高昂</li>
+<li><strong>完整性 vs 实时性</strong>：存储所有信息使检索变慢</li>
+<li><strong>成本 vs 实时性</strong>：压缩信息虽然省钱，但可能丢失重要细节</li>
+</ol>
+<blockquote>
+<p>💡 <strong>面试要点</strong>：能分析记忆系统的设计权衡，比只描述实现更能打动面试官。</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="72-记忆系统的挑战">7.2 记忆系统的挑战</h2>
+<h3 class="atx" id="721-llm-的上下文窗口限制">7.2.1 LLM 的上下文窗口限制</h3>
+<pre><code class="fenced-code-block">模型上下文窗口对比：
+┌──────────────────┬──────────────┐
+│ 模型             │ 上下文窗口    │
+├──────────────────┼──────────────┤
+│ GPT-3.5          │ 4K / 16K     │
+│ GPT-4o           │ 128K         │
+│ Claude 3.5       │ 200K         │
+│ DeepSeek-V3      │ 128K         │
+│ Gemini 1.5 Pro   │ 2M           │
+└──────────────────┴──────────────┘
+
+128K tokens ≈ 约 10 万字 ≈ 一本短篇小说</code></pre>
+<p>看似很大，但实际上：</p>
+<ul>
+<li>System Prompt 占用 2000-5000 tokens</li>
+<li>工具定义占用 3000-8000 tokens</li>
+<li>技能摘要占用 1000-3000 tokens</li>
+<li>长期记忆占用 500-2000 tokens</li>
+<li><strong>留给对话历史的空间其实有限</strong></li>
+</ul>
+<h3 class="atx" id="722-信息遗忘的代价">7.2.2 信息遗忘的代价</h3>
+<p>如果简单地"截断"旧对话来适应窗口：</p>
+<ul>
+<li>可能丢失用户的关键偏好</li>
+<li>可能遗忘重要的任务上下文</li>
+<li>可能重复询问已知信息（用户体验差）</li>
+</ul>
+<h3 class="atx" id="723-业界常见方案">7.2.3 业界常见方案</h3>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>滑动窗口截断</td>
+<td>实现简单</td>
+<td>丢失早期信息</td>
+</tr>
+<tr>
+<td>向量检索（RAG）</td>
+<td>精确检索</td>
+<td>需要向量库，架构复杂</td>
+</tr>
+<tr>
+<td>摘要压缩</td>
+<td>保留关键信息</td>
+<td>有信息损失</td>
+</tr>
+<tr>
+<td>知识图谱</td>
+<td>结构化存储</td>
+<td>实现复杂，维护成本高</td>
+</tr>
+<tr>
+<td><strong>文件存储（Nanobot）</strong></td>
+<td><strong>简单透明</strong></td>
+<td><strong>依赖文件 I/O</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 class="atx" id="73-nanobot-双层记忆架构">7.3 Nanobot 双层记忆架构</h2>
+<p>Nanobot 采用了一种极简但有效的双层记忆架构：</p>
+<pre><code class="fenced-code-block">┌─────────────────────────────────────────────────────────────┐
+│                    Nanobot 记忆架构                          │
+│                                                             │
+│  ┌──────────────────────┐  ┌──────────────────────────────┐ │
+│  │   MEMORY.md          │  │   HISTORY.md                 │ │
+│  │   （长期记忆）         │  │   （历史时间线）              │ │
+│  │                      │  │                              │ │
+│  │ · 关键事实           │  │ · 时间戳 + 事件摘要          │ │
+│  │ · 用户偏好           │  │ · 仅追加模式                 │ │
+│  │ · 重要决策           │  │ · 不注入 System Prompt       │ │
+│  │ · 项目状态           │  │ · 通过 read_file 按需检索    │ │
+│  │                      │  │                              │ │
+│  │ ✅ 始终注入上下文     │  │ ✅ 节省 token               │ │
+│  │ ❌ 大小有限          │  │ ❌ 需要主动查询              │ │
+│  └──────────────────────┘  └──────────────────────────────┘ │
+│                                                             │
+│  ┌──────────────────────────────────────────────────────────┐│
+│  │   Session JSONL（短期记忆）                               ││
+│  │   · 完整对话历史 · 工具调用记录 · 当前会话上下文          ││
+│  └──────────────────────────────────────────────────────────┘│
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<h3 class="atx" id="关键设计决策">关键设计决策</h3>
+<table>
+<thead>
+<tr>
+<th>设计决策</th>
+<th>Nanobot 的选择</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>存储方式</td>
+<td>纯文件（Markdown）</td>
+<td>透明、可编辑、无外部依赖</td>
+</tr>
+<tr>
+<td>长期记忆</td>
+<td>全量注入</td>
+<td>确保 Agent 始终知道关键信息</td>
+</tr>
+<tr>
+<td>历史时间线</td>
+<td>按需检索</td>
+<td>节省 token，历史通常不需要</td>
+</tr>
+<tr>
+<td>压缩方式</td>
+<td>LLM 驱动摘要</td>
+<td>利用 LLM 的理解能力</td>
+</tr>
+<tr>
+<td>会话存储</td>
+<td>JSONL 格式</td>
+<td>追加写入高效，便于流式处理</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 class="atx" id="74-memorymd--长期记忆">7.4 MEMORY.md —— 长期记忆</h2>
+<h3 class="atx" id="741-存储位置">7.4.1 存储位置</h3>
+<pre><code class="fenced-code-block">&lt;workspace&gt;/memory/MEMORY.md</code></pre>
+<p>在 config.json 中通过 <code>workspace</code> 字段间接确定位置。</p>
+<h3 class="atx" id="742-文件内容示例">7.4.2 文件内容示例</h3>
+<pre><code class="fenced-code-block language-markdown"><span class="token title important"><span class="token punctuation">#</span> Memory</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 用户信息</span>
+<span class="token list punctuation">-</span> 用户名：张三
+<span class="token list punctuation">-</span> 职业：后端开发工程师，3 年经验
+<span class="token list punctuation">-</span> 技术栈：Python, FastAPI, PostgreSQL, Redis
+<span class="token list punctuation">-</span> 目标：准备 AI Agent 方向的面试
+
+<span class="token title important"><span class="token punctuation">##</span> 偏好</span>
+<span class="token list punctuation">-</span> 语言：简体中文
+<span class="token list punctuation">-</span> 风格：喜欢看代码示例，偏好详细解释
+<span class="token list punctuation">-</span> 工作环境：macOS, VS Code
+
+<span class="token title important"><span class="token punctuation">##</span> 项目上下文</span>
+<span class="token list punctuation">-</span> 当前正在学习 Nanobot 框架
+<span class="token list punctuation">-</span> 已完成章节 01-06 的学习
+<span class="token list punctuation">-</span> 重点关注记忆系统和工具系统
+
+<span class="token title important"><span class="token punctuation">##</span> 重要决策</span>
+<span class="token list punctuation">-</span> 2024-03-15：决定使用 DeepSeek 作为主要 LLM Provider
+<span class="token list punctuation">-</span> 2024-03-16：确定面试重点为 Agent 架构设计</code></pre>
+<h3 class="atx" id="743-注入方式">7.4.3 注入方式</h3>
+<p>MEMORY.md 的内容<strong>始终</strong>被注入到 System Prompt 中：</p>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># 简化的源码逻辑</span>
+<span class="token keyword">def</span> <span class="token function">build_system_prompt</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    parts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    parts<span class="token punctuation">.</span>append<span class="token punctuation">(</span>self<span class="token punctuation">.</span>base_instructions<span class="token punctuation">)</span>
+
+    <span class="token comment"># MEMORY.md 始终注入</span>
+    memory_path <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>self<span class="token punctuation">.</span>workspace<span class="token punctuation">,</span> <span class="token string">"memory"</span><span class="token punctuation">,</span> <span class="token string">"MEMORY.md"</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>memory_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        memory_content <span class="token operator">=</span> read_file<span class="token punctuation">(</span>memory_path<span class="token punctuation">)</span>
+        parts<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"## Long-term Memory\n</span><span class="token interpolation"><span class="token punctuation">{</span>memory_content<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token string">"\n"</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>parts<span class="token punctuation">)</span></code></pre>
+<h3 class="atx" id="744-为什么用-markdown-而不是数据库">7.4.4 为什么用 Markdown 而不是数据库</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>Markdown 文件</th>
+<th>数据库/向量库</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>安装依赖</td>
+<td>无（纯文件）</td>
+<td>需要安装配置</td>
+</tr>
+<tr>
+<td>可读性</td>
+<td>人类直接可读</td>
+<td>需要查询工具</td>
+</tr>
+<tr>
+<td>可编辑性</td>
+<td>任何编辑器</td>
+<td>需要专用接口</td>
+</tr>
+<tr>
+<td>Agent 理解</td>
+<td>天然理解 Markdown</td>
+<td>需要转换</td>
+</tr>
+<tr>
+<td>透明度</td>
+<td>完全透明</td>
+<td>黑盒</td>
+</tr>
+<tr>
+<td>扩展性</td>
+<td>有限</td>
+<td>强</td>
+</tr>
+<tr>
+<td>检索精度</td>
+<td>全文匹配</td>
+<td>语义检索</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 <strong>Nanobot 的哲学</strong>："Agent 能读写 Markdown，用户也能读写 Markdown，为什么不让记忆就是 Markdown？"</p>
+</blockquote>
+<h3 class="atx" id="745-memorymd-的大小控制">7.4.5 MEMORY.md 的大小控制</h3>
+<p>MEMORY.md 不是无限增长的，它通过 MemoryConsolidator 进行动态管理：</p>
+<ul>
+<li><strong>新信息进入</strong>：MemoryConsolidator 将新发现整合到 MEMORY.md</li>
+<li><strong>旧信息淘汰</strong>：不再相关的信息在重写时被自然省略</li>
+<li><strong>大小目标</strong>：保持在 500-2000 tokens 之间</li>
+</ul>
+<hr>
+<h2 class="atx" id="75-historymd--历史时间线">7.5 HISTORY.md —— 历史时间线</h2>
+<h3 class="atx" id="751-存储位置">7.5.1 存储位置</h3>
+<pre><code class="fenced-code-block">&lt;workspace&gt;/memory/HISTORY.md</code></pre>
+<h3 class="atx" id="752-文件内容示例">7.5.2 文件内容示例</h3>
+<pre><code class="fenced-code-block language-markdown"><span class="token title important"><span class="token punctuation">#</span> History</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 2024-03-15 14:30</span>
+用户自我介绍，是一名后端工程师，正在准备 AI Agent 面试。讨论了学习路线。
+
+<span class="token title important"><span class="token punctuation">##</span> 2024-03-15 16:45</span>
+帮助用户安装 Nanobot，解决了 API 连接超时问题（改用 DeepSeek Provider）。
+
+<span class="token title important"><span class="token punctuation">##</span> 2024-03-16 09:00</span>
+讲解了 Nanobot 的架构设计，用户对记忆系统特别感兴趣。创建了记忆系统的学习笔记。
+
+<span class="token title important"><span class="token punctuation">##</span> 2024-03-16 14:30</span>
+模拟面试练习：Agent 架构设计题。用户回答了 3 道题，在"记忆压缩机制"的描述上需要加强。</code></pre>
+<h3 class="atx" id="753-核心特性">7.5.3 核心特性</h3>
+<p><strong>1. 仅追加模式（Append-Only）</strong></p>
+<p>HISTORY.md 只会在末尾追加新条目，不会修改或删除已有内容：</p>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># 简化的源码逻辑</span>
+<span class="token keyword">def</span> <span class="token function">append_history</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> entry<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    history_path <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>self<span class="token punctuation">.</span>workspace<span class="token punctuation">,</span> <span class="token string">"memory"</span><span class="token punctuation">,</span> <span class="token string">"HISTORY.md"</span><span class="token punctuation">)</span>
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>history_path<span class="token punctuation">,</span> <span class="token string">"a"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"\n</span><span class="token interpolation"><span class="token punctuation">{</span>entry<span class="token punctuation">}</span></span><span class="token string">\n"</span></span><span class="token punctuation">)</span></code></pre>
+<p><strong>2. 不整体注入上下文</strong></p>
+<p>与 MEMORY.md 不同，HISTORY.md <strong>不会</strong>被注入到 System Prompt：</p>
+<pre><code class="fenced-code-block">System Prompt 包含：
+✅ MEMORY.md  → 始终注入
+❌ HISTORY.md → 不注入（节省 token）</code></pre>
+<p><strong>3. 通过工具按需检索</strong></p>
+<p>当 Agent 需要回忆过去的事件时，可以通过 <code>read_file</code> 或 <code>grep</code> 工具主动检索：</p>
+<pre><code class="fenced-code-block">Agent 内部思考：
+"用户问我之前讨论过什么...我需要查看历史记录"
+
+[调用工具: read_file]
+[路径: memory/HISTORY.md]
+
+→ 获取历史时间线
+→ 基于时间线回答用户问题</code></pre>
+<h3 class="atx" id="754-memorymd-vs-historymd-对比">7.5.4 MEMORY.md vs HISTORY.md 对比</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>MEMORY.md</th>
+<th>HISTORY.md</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>性质</td>
+<td>长期记忆（语义）</td>
+<td>历史时间线（事件）</td>
+</tr>
+<tr>
+<td>注入方式</td>
+<td>始终注入 System Prompt</td>
+<td>不注入，按需检索</td>
+</tr>
+<tr>
+<td>更新方式</td>
+<td>整体重写（覆盖）</td>
+<td>仅追加（Append）</td>
+</tr>
+<tr>
+<td>Token 消耗</td>
+<td>每轮都消耗</td>
+<td>仅检索时消耗</td>
+</tr>
+<tr>
+<td>内容类型</td>
+<td>关键事实、偏好</td>
+<td>时间戳 + 事件摘要</td>
+</tr>
+<tr>
+<td>大小控制</td>
+<td>MemoryConsolidator 管理</td>
+<td>持续增长</td>
+</tr>
+<tr>
+<td>类比</td>
+<td>大脑的核心认知</td>
+<td>日记本</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 class="atx" id="76-memoryconsolidator-压缩机制">7.6 MemoryConsolidator 压缩机制</h2>
+<p>MemoryConsolidator 是 Nanobot 记忆系统中最精妙的设计，也是<strong>面试高频考点</strong>。</p>
+<h3 class="atx" id="761-触发条件">7.6.1 触发条件</h3>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># 简化的源码逻辑</span>
+<span class="token keyword">def</span> <span class="token function">should_consolidate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> messages<span class="token punctuation">:</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">bool</span><span class="token punctuation">:</span>
+    total_tokens <span class="token operator">=</span> estimate_prompt_tokens_chain<span class="token punctuation">(</span>messages<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> total_tokens <span class="token operator">&gt;</span> self<span class="token punctuation">.</span>context_window_tokens</code></pre>
+<p>当 <code>estimate_prompt_tokens_chain</code>（估算的 Prompt 总 token 数）超过 <code>context_window_tokens</code>（配置的上下文窗口大小）时，触发压缩。</p>
+<pre><code class="fenced-code-block">触发公式：
+estimate_prompt_tokens_chain(当前对话链) &gt; context_window_tokens
+
+例如：
+context_window_tokens = 128000
+当前对话 tokens = 130000
+→ 130000 &gt; 128000 → 触发压缩！</code></pre>
+<h3 class="atx" id="762-压缩流程详解">7.6.2 压缩流程详解</h3>
+<pre><code class="fenced-code-block">完整的压缩流程：
+
+Step 1: 检测触发
+─────────────────────────────
+estimate_prompt_tokens_chain() &gt; context_window_tokens
+           │
+           ▼
+Step 2: 构造压缩 Prompt
+─────────────────────────────
+"当前 MEMORY.md 内容" + "待处理的对话历史"
+           │
+           ▼
+Step 3: 调用 LLM（tool_choice: save_memory）
+─────────────────────────────
+LLM 分析对话，提取关键信息
+           │
+           ▼
+Step 4: LLM 返回 save_memory 工具调用
+─────────────────────────────
+{
+  "tool": "save_memory",
+  "arguments": {
+    "history_entry": "时间戳摘要...",
+    "memory_update": "新的完整 MEMORY.md 内容..."
+  }
+}
+           │
+           ▼
+Step 5: 写入文件
+─────────────────────────────
+HISTORY.md ← 追加 history_entry
+MEMORY.md  ← 覆盖为 memory_update
+           │
+           ▼
+Step 6: 截断对话历史
+─────────────────────────────
+丢弃已被压缩的旧对话消息</code></pre>
+<h3 class="atx" id="763-save_memory-虚拟工具">7.6.3 save_memory 虚拟工具</h3>
+<p><code>save_memory</code> 是一个<strong>虚拟工具</strong>——它不在工具注册表中暴露给 Agent 正常使用，仅在记忆压缩时通过 <code>tool_choice</code> 强制 LLM 调用。</p>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># save_memory 工具定义</span>
+save_memory_tool <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"function"</span><span class="token punctuation">,</span>
+    <span class="token string">"function"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"save_memory"</span><span class="token punctuation">,</span>
+        <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Save consolidated memory"</span><span class="token punctuation">,</span>
+        <span class="token string">"parameters"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"object"</span><span class="token punctuation">,</span>
+            <span class="token string">"properties"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                <span class="token string">"history_entry"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"string"</span><span class="token punctuation">,</span>
+                    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A timestamped summary for HISTORY.md"</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">"memory_update"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"string"</span><span class="token punctuation">,</span>
+                    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"The complete new content for MEMORY.md"</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token string">"required"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"history_entry"</span><span class="token punctuation">,</span> <span class="token string">"memory_update"</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p><strong>两个参数的职责</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>写入目标</th>
+<th>写入方式</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>history_entry</code></td>
+<td>HISTORY.md</td>
+<td>追加（Append）</td>
+<td>时间戳 + 对话摘要</td>
+</tr>
+<tr>
+<td><code>memory_update</code></td>
+<td>MEMORY.md</td>
+<td>覆盖（Overwrite）</td>
+<td>新的完整 MEMORY.md</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="764-压缩-prompt-的构造">7.6.4 压缩 Prompt 的构造</h3>
+<p>MemoryConsolidator 构造给 LLM 的压缩提示词大致如下：</p>
+<pre><code class="fenced-code-block">你是一个记忆管理助手。你需要：
+
+1. 分析当前的记忆内容和新的对话历史
+2. 将新的重要信息整合到记忆中
+3. 移除不再相关的旧信息
+4. 生成一条历史时间线条目
+
+当前 MEMORY.md 内容：
+---
+{current_memory}
+---
+
+需要处理的对话历史：
+---
+{conversation_to_consolidate}
+---
+
+请调用 save_memory 工具保存结果。</code></pre>
+<h3 class="atx" id="765-鲁棒性设计">7.6.5 鲁棒性设计</h3>
+<p>MemoryConsolidator 的健壮性设计是源码中的一大亮点，也是面试加分项：</p>
+<p><strong>1. JSON 归一化</strong></p>
+<p>LLM 返回的 JSON 可能格式不规范（多余逗号、缺少引号等），Nanobot 会进行归一化处理：</p>
+<pre><code class="fenced-code-block language-python"><span class="token keyword">def</span> <span class="token function">normalize_json</span><span class="token punctuation">(</span>raw_text<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">dict</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""尝试修复和解析不规范的 JSON"""</span>
+    <span class="token comment"># 移除 markdown 代码块标记</span>
+    text <span class="token operator">=</span> raw_text<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> text<span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">"```"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        text <span class="token operator">=</span> text<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+        text <span class="token operator">=</span> text<span class="token punctuation">.</span>rsplit<span class="token punctuation">(</span><span class="token string">"```"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+    <span class="token comment"># 尝试直接解析</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+    <span class="token keyword">except</span> json<span class="token punctuation">.</span>JSONDecodeError<span class="token punctuation">:</span>
+        <span class="token comment"># 尝试修复常见问题并重新解析</span>
+        text <span class="token operator">=</span> fix_trailing_commas<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+        text <span class="token operator">=</span> fix_single_quotes<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>text<span class="token punctuation">)</span></code></pre>
+<p><strong>2. tool_choice 失败回退</strong></p>
+<p>首先使用 <code>tool_choice: {"type": "function", "function": {"name": "save_memory"}}</code> 强制 LLM 调用 <code>save_memory</code>。如果失败（某些模型不支持 tool_choice），则回退到 <code>tool_choice: "auto"</code>：</p>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># 简化的回退逻辑</span>
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">consolidate</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        <span class="token comment"># 首次尝试：强制调用 save_memory</span>
+        result <span class="token operator">=</span> <span class="token keyword">await</span> self<span class="token punctuation">.</span>llm<span class="token punctuation">.</span>call<span class="token punctuation">(</span>
+            messages<span class="token operator">=</span>consolidation_messages<span class="token punctuation">,</span>
+            tools<span class="token operator">=</span><span class="token punctuation">[</span>save_memory_tool<span class="token punctuation">]</span><span class="token punctuation">,</span>
+            tool_choice<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"function"</span><span class="token punctuation">,</span> <span class="token string">"function"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"save_memory"</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception<span class="token punctuation">:</span>
+        <span class="token comment"># 回退：使用 auto 模式</span>
+        result <span class="token operator">=</span> <span class="token keyword">await</span> self<span class="token punctuation">.</span>llm<span class="token punctuation">.</span>call<span class="token punctuation">(</span>
+            messages<span class="token operator">=</span>consolidation_messages<span class="token punctuation">,</span>
+            tools<span class="token operator">=</span><span class="token punctuation">[</span>save_memory_tool<span class="token punctuation">]</span><span class="token punctuation">,</span>
+            tool_choice<span class="token operator">=</span><span class="token string">"auto"</span>
+        <span class="token punctuation">)</span></code></pre>
+<p><strong>3. 连续 3 次失败的 Raw Archive</strong></p>
+<p>如果 tool_choice 和 auto 模式都连续失败 3 次，启用最后的保底策略——Raw Archive：</p>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># 保底策略：直接将对话原文追加到 HISTORY.md</span>
+<span class="token keyword">def</span> <span class="token function">raw_archive</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> messages<span class="token punctuation">:</span> <span class="token builtin">list</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""当所有压缩策略都失败时，直接归档原始对话"""</span>
+    raw_text <span class="token operator">=</span> format_messages_as_text<span class="token punctuation">(</span>messages<span class="token punctuation">)</span>
+    timestamp <span class="token operator">=</span> datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>isoformat<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    entry <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"## </span><span class="token interpolation"><span class="token punctuation">{</span>timestamp<span class="token punctuation">}</span></span><span class="token string"> [Raw Archive]\n</span><span class="token interpolation"><span class="token punctuation">{</span>raw_text<span class="token punctuation">}</span></span><span class="token string">\n"</span></span>
+    append_to_file<span class="token punctuation">(</span><span class="token string">"memory/HISTORY.md"</span><span class="token punctuation">,</span> entry<span class="token punctuation">)</span>
+
+    <span class="token comment"># 清除已归档的消息</span>
+    messages<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<pre><code class="fenced-code-block">容错链路：
+tool_choice: save_memory  →  失败
+         │
+         ▼
+tool_choice: auto         →  失败
+         │
+         ▼
+直接 Raw Archive          →  保底成功</code></pre>
+<blockquote>
+<p>💡 <strong>面试要点</strong>：这种三级容错设计体现了工程鲁棒性思维。面试时可以展开讲："Nanobot 的记忆压缩有三级容错——先用 tool_choice 强制调用，失败后回退到 auto 模式让模型自主选择，如果连续 3 次都失败则直接归档原始对话。这确保了无论什么情况下记忆都不会丢失。"</p>
+</blockquote>
+<h3 class="atx" id="766-压缩前后对比示例">7.6.6 压缩前后对比示例</h3>
+<p><strong>压缩前 —— 原始对话（约 5000 tokens）</strong>：</p>
+<pre><code class="fenced-code-block">User: 我叫张三，是后端工程师
+Agent: 你好张三！...（详细自我介绍）
+
+User: 帮我写一个 FastAPI 的 CRUD 接口
+Agent: 好的，我来帮你写...（200行代码）
+
+User: 这个接口怎么加上 JWT 认证？
+Agent: 我们需要...（100行代码 + 详细解释）
+
+User: 数据库用 PostgreSQL 还是 MySQL？
+Agent: 对比分析...（长篇分析）
+
+... 还有 20 轮对话 ...</code></pre>
+<p><strong>压缩后 —— MEMORY.md（约 500 tokens）</strong>：</p>
+<pre><code class="fenced-code-block language-markdown"><span class="token title important"><span class="token punctuation">#</span> Memory</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 用户信息</span>
+<span class="token list punctuation">-</span> 姓名：张三
+<span class="token list punctuation">-</span> 职业：后端工程师
+<span class="token list punctuation">-</span> 技术栈偏好：FastAPI, PostgreSQL
+
+<span class="token title important"><span class="token punctuation">##</span> 项目上下文</span>
+<span class="token list punctuation">-</span> 正在构建一个 REST API 项目
+<span class="token list punctuation">-</span> 已实现 CRUD 接口和 JWT 认证
+<span class="token list punctuation">-</span> 数据库选择了 PostgreSQL
+
+<span class="token title important"><span class="token punctuation">##</span> 技术偏好</span>
+<span class="token list punctuation">-</span> 喜欢详细的代码示例
+<span class="token list punctuation">-</span> 偏好使用类型注解</code></pre>
+<p><strong>压缩后 —— HISTORY.md（新增约 200 tokens）</strong>：</p>
+<pre><code class="fenced-code-block language-markdown"><span class="token title important"><span class="token punctuation">##</span> 2024-03-15 14:30-16:00</span>
+帮助用户张三（后端工程师）构建 FastAPI REST API 项目。完成了 CRUD 接口、JWT 认证集成。对比分析后选择 PostgreSQL 作为数据库。用户偏好详细代码示例。</code></pre>
+<hr>
+<h2 class="atx" id="77-短期记忆：session-会话历史">7.7 短期记忆：Session 会话历史</h2>
+<h3 class="atx" id="771-session-的概念">7.7.1 Session 的概念</h3>
+<p>Session 是一次"对话会话"的完整记录，存储为 JSONL（JSON Lines）格式。</p>
+<pre><code class="fenced-code-block">&lt;workspace&gt;/sessions/&lt;session_key&gt;.jsonl</code></pre>
+<p><code>session_key</code> 的格式为 <code>{channel}:{chat_id}</code>，例如：</p>
+<ul>
+<li><code>cli:default.jsonl</code> —— CLI 交互的默认会话</li>
+<li><code>telegram:123456.jsonl</code> —— Telegram 用户 123456 的会话</li>
+<li><code>discord:guild_123:channel_456.jsonl</code> —— Discord 特定频道的会话</li>
+</ul>
+<h3 class="atx" id="772-jsonl-格式">7.7.2 JSONL 格式</h3>
+<p>每行是一个完整的 JSON 对象，记录一个对话"回合"（turn）：</p>
+<pre><code class="fenced-code-block language-jsonl">{"role":"user","content":"你好","timestamp":"2024-03-15T14:30:00Z"}
+{"role":"assistant","content":"你好！有什么可以帮你的吗？","timestamp":"2024-03-15T14:30:05Z","tool_calls":null}
+{"role":"user","content":"帮我创建一个 hello.py","timestamp":"2024-03-15T14:31:00Z"}
+{"role":"assistant","content":"好的，我来帮你创建。","timestamp":"2024-03-15T14:31:03Z","tool_calls":[{"name":"write_file","arguments":{"path":"hello.py","content":"print('Hello, World!')"}}]}
+{"role":"tool","content":"File written successfully","name":"write_file","timestamp":"2024-03-15T14:31:04Z"}</code></pre>
+<h3 class="atx" id="773-_save_turn-方法">7.7.3 _save_turn() 方法</h3>
+<p><code>_save_turn()</code> 是 Session 管理的核心方法，负责将每个对话回合持久化到 JSONL 文件：</p>
+<pre><code class="fenced-code-block language-python"><span class="token comment"># 简化的源码逻辑</span>
+<span class="token keyword">def</span> <span class="token function">_save_turn</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token builtin">dict</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""保存一个对话回合到 JSONL 文件"""</span>
+
+    <span class="token comment"># 1. 清理 reasoning/thinking 标签</span>
+    content <span class="token operator">=</span> message<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"content"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span>
+    content <span class="token operator">=</span> self<span class="token punctuation">.</span>_strip_thinking_tags<span class="token punctuation">(</span>content<span class="token punctuation">)</span>
+
+    <span class="token comment"># 2. 处理大图片（用占位符替换）</span>
+    <span class="token keyword">if</span> <span class="token string">"media"</span> <span class="token keyword">in</span> message<span class="token punctuation">:</span>
+        message <span class="token operator">=</span> self<span class="token punctuation">.</span>_replace_large_images<span class="token punctuation">(</span>message<span class="token punctuation">)</span>
+
+    <span class="token comment"># 3. 追加写入 JSONL</span>
+    session_path <span class="token operator">=</span> self<span class="token punctuation">.</span>_get_session_path<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>session_path<span class="token punctuation">,</span> <span class="token string">"a"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>message<span class="token punctuation">,</span> ensure_ascii<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">)</span></code></pre>
+<h3 class="atx" id="774-关键处理细节">7.7.4 关键处理细节</h3>
+<p><strong>1. 清理 reasoning/thinking 标签</strong></p>
+<p>某些模型（如 DeepSeek）会在回复中包含 <code>&lt;thinking&gt;...&lt;/thinking&gt;</code> 内部推理标签。这些标签不应出现在持久化的会话记录中：</p>
+<pre><code class="fenced-code-block language-python"><span class="token keyword">def</span> <span class="token function">_strip_thinking_tags</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> content<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">str</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""移除 LLM 内部推理标签"""</span>
+    <span class="token keyword">import</span> re
+    <span class="token comment"># 移除 &lt;thinking&gt;...&lt;/thinking&gt;</span>
+    content <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">r'&lt;thinking&gt;.*?&lt;/thinking&gt;'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> content<span class="token punctuation">,</span> flags<span class="token operator">=</span>re<span class="token punctuation">.</span>DOTALL<span class="token punctuation">)</span>
+    <span class="token comment"># 移除 &lt;reasoning&gt;...&lt;/reasoning&gt;</span>
+    content <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">r'&lt;reasoning&gt;.*?&lt;/reasoning&gt;'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> content<span class="token punctuation">,</span> flags<span class="token operator">=</span>re<span class="token punctuation">.</span>DOTALL<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> content<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p><strong>2. 大图片占位符替换</strong></p>
+<p>如果对话中包含大图片（base64 编码），直接存储会导致 JSONL 文件膨胀。Nanobot 用占位符替换：</p>
+<pre><code class="fenced-code-block language-python"><span class="token keyword">def</span> <span class="token function">_replace_large_images</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token builtin">dict</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">dict</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""将大图片替换为占位符"""</span>
+    MAX_IMAGE_SIZE <span class="token operator">=</span> <span class="token number">1024</span> <span class="token operator">*</span> <span class="token number">100</span>  <span class="token comment"># 100KB</span>
+
+    <span class="token keyword">if</span> <span class="token string">"media"</span> <span class="token keyword">in</span> message<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> i<span class="token punctuation">,</span> media_item <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>message<span class="token punctuation">[</span><span class="token string">"media"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>media_item<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"data"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> MAX_IMAGE_SIZE<span class="token punctuation">:</span>
+                message<span class="token punctuation">[</span><span class="token string">"media"</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+                    <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
+                    <span class="token string">"placeholder"</span><span class="token punctuation">:</span> <span class="token string">"[Large image omitted]"</span><span class="token punctuation">,</span>
+                    <span class="token string">"original_size"</span><span class="token punctuation">:</span> <span class="token builtin">len</span><span class="token punctuation">(</span>media_item<span class="token punctuation">[</span><span class="token string">"data"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> message</code></pre>
+<h3 class="atx" id="775-session-加载与恢复">7.7.5 Session 加载与恢复</h3>
+<p>当 Agent 重新启动时，会从 JSONL 文件恢复会话历史：</p>
+<pre><code class="fenced-code-block language-python"><span class="token keyword">def</span> <span class="token function">load_session</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> session_key<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">list</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""从 JSONL 文件加载会话历史"""</span>
+    session_path <span class="token operator">=</span> self<span class="token punctuation">.</span>_get_session_path<span class="token punctuation">(</span>session_key<span class="token punctuation">)</span>
+    messages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>session_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>session_path<span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
+                line <span class="token operator">=</span> line<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span> line<span class="token punctuation">:</span>
+                    messages<span class="token punctuation">.</span>append<span class="token punctuation">(</span>json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> messages</code></pre>
+<hr>
+<h2 class="atx" id="78-记忆系统完整数据流">7.8 记忆系统完整数据流</h2>
+<p>将三层记忆整合起来，完整数据流如下：</p>
+<pre><code class="fenced-code-block">用户发送消息
+    │
+    ▼
+┌──────────────────────────┐
+│  加载 Session 会话历史    │ ← sessions/&lt;key&gt;.jsonl
+│  加载 MEMORY.md          │ ← memory/MEMORY.md（注入 System Prompt）
+└──────────────────────────┘
+    │
+    ▼
+┌──────────────────────────┐
+│  构建完整 Prompt          │
+│  = System Prompt          │
+│    + MEMORY.md            │
+│    + Session History      │
+│    + 当前用户消息          │
+└──────────────────────────┘
+    │
+    ▼
+┌──────────────────────────┐
+│  estimate_prompt_tokens   │
+│  检查是否超过窗口         │
+└──────────────────────────┘
+    │                │
+    │ 未超过          │ 超过
+    ▼                ▼
+┌────────────┐  ┌──────────────────┐
+│ 正常调用   │  │ MemoryConsolidator│
+│ LLM API    │  │ 1. 压缩对话      │
+└────────────┘  │ 2. 更新 MEMORY.md│
+    │           │ 3. 追加 HISTORY.md│
+    │           │ 4. 截断会话       │
+    │           └──────────────────┘
+    │                │
+    ▼                ▼
+┌──────────────────────────┐
+│  Agent 回复               │
+│  _save_turn() 持久化      │ → sessions/&lt;key&gt;.jsonl
+└──────────────────────────┘</code></pre>
+<hr>
+<h2 class="atx" id="79-记忆系统与其他框架对比">7.9 记忆系统与其他框架对比</h2>
+<h3 class="atx" id="791-主流方案对比">7.9.1 主流方案对比</h3>
+<table>
+<thead>
+<tr>
+<th>框架/方案</th>
+<th>存储方式</th>
+<th>检索方式</th>
+<th>压缩方式</th>
+<th>透明度</th>
+<th>复杂度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Nanobot</strong></td>
+<td><strong>Markdown 文件</strong></td>
+<td><strong>全文注入 + 文件检索</strong></td>
+<td><strong>LLM 摘要</strong></td>
+<td><strong>高</strong></td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td>LangChain</td>
+<td>向量数据库</td>
+<td>向量相似度</td>
+<td>无/手动</td>
+<td>低</td>
+<td>中</td>
+</tr>
+<tr>
+<td>AutoGPT</td>
+<td>JSON 文件</td>
+<td>向量检索</td>
+<td>无</td>
+<td>中</td>
+<td>中</td>
+</tr>
+<tr>
+<td>MemGPT</td>
+<td>虚拟分页</td>
+<td>分页检索</td>
+<td>LLM 编辑</td>
+<td>中</td>
+<td>高</td>
+</tr>
+<tr>
+<td>CrewAI</td>
+<td>共享内存</td>
+<td>直接访问</td>
+<td>无</td>
+<td>低</td>
+<td>低</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="792-向量库-vs-文件存储-vs-知识图谱">7.9.2 向量库 vs 文件存储 vs 知识图谱</h3>
+<p><strong>向量库方案（如 LangChain + Chroma/Pinecone）</strong></p>
+<pre><code class="fenced-code-block">优点：
+✅ 语义检索精确（"找关于数据库的讨论" 即使没有"数据库"关键词也能找到）
+✅ 适合大量非结构化文档
+✅ 检索速度快（O(log n)）
+
+缺点：
+❌ 需要外部依赖（向量数据库）
+❌ 向量化过程有信息损失
+❌ 更新不直观（需要重新 embedding）
+❌ 调试困难（向量不可读）</code></pre>
+<p><strong>文件存储方案（Nanobot）</strong></p>
+<pre><code class="fenced-code-block">优点：
+✅ 零外部依赖
+✅ 完全透明（人类可读可编辑）
+✅ Agent 原生理解（Markdown）
+✅ 版本控制友好（git 可追踪）
+✅ 实现简单
+
+缺点：
+❌ 不支持语义检索（只能关键词匹配）
+❌ 全文注入消耗 token
+❌ 不适合超大规模记忆</code></pre>
+<p><strong>知识图谱方案（如 Neo4j + LLM）</strong></p>
+<pre><code class="fenced-code-block">优点：
+✅ 结构化存储关系
+✅ 复杂推理能力（多跳查询）
+✅ 知识去重
+
+缺点：
+❌ 实现极其复杂
+❌ 需要实体抽取和关系建模
+❌ 维护成本高
+❌ 不适合轻量级 Agent</code></pre>
+<h3 class="atx" id="793-nanobot-方案的适用场景">7.9.3 Nanobot 方案的适用场景</h3>
+<pre><code class="fenced-code-block">适合 Nanobot 文件记忆的场景：
+✅ 个人助手（单用户，记忆量小）
+✅ 轻量级 Agent（快速原型）
+✅ 开发学习（透明可调试）
+✅ 记忆内容结构化（事实列表）
+
+不太适合的场景：
+❌ 海量文档检索（1000+ 页）
+❌ 多用户共享知识库
+❌ 需要复杂关系推理
+❌ 实时高并发场景</code></pre>
+<hr>
+<h2 class="atx" id="710-实战练习">7.10 实战练习</h2>
+<h3 class="atx" id="练习-1：观察记忆压缩过程">练习 1：观察记忆压缩过程</h3>
+<pre><code class="fenced-code-block language-bash"><span class="token comment"># 1. 创建测试 workspace</span>
+<span class="token function">mkdir</span> memory-test <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> memory-test
+nanobot onboard
+
+<span class="token comment"># 2. 设置较小的 context_window_tokens 以便快速触发压缩</span>
+<span class="token comment"># 编辑 config.json，将 context_window_tokens 改为 4000</span></code></pre>
+<p>修改 config.json：</p>
+<pre><code class="fenced-code-block language-json"><span class="token punctuation">{</span>
+  <span class="token property">"agents"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"defaults"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"context_window_tokens"</span><span class="token operator">:</span> <span class="token number">4000</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<pre><code class="fenced-code-block language-bash"><span class="token comment"># 3. 启动 Agent 并进行大量对话</span>
+nanobot
+
+<span class="token comment"># 对话示例（快速填充上下文）：</span>
+<span class="token comment"># You: 写一篇500字的关于Python的文章</span>
+<span class="token comment"># You: 再写一篇关于JavaScript的</span>
+<span class="token comment"># You: 比较一下两种语言的优缺点</span>
+
+<span class="token comment"># 4. 观察压缩触发</span>
+<span class="token comment"># 当 token 数超过 4000 时，Agent 会触发记忆压缩</span>
+<span class="token comment"># 你会看到 MEMORY.md 和 HISTORY.md 被更新</span>
+
+<span class="token comment"># 5. 检查结果</span>
+<span class="token function">cat</span> memory/MEMORY.md
+<span class="token function">cat</span> memory/HISTORY.md</code></pre>
+<h3 class="atx" id="练习-2：手动编辑长期记忆">练习 2：手动编辑长期记忆</h3>
+<pre><code class="fenced-code-block language-bash"><span class="token comment"># 你可以直接编辑 MEMORY.md 来"植入"记忆</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> memory/MEMORY.md <span class="token operator">&lt;&lt;</span> <span class="token string">'EOF'
+# Memory
+
+## 用户信息
+- 我是一个资深的 Kubernetes 管理员
+- 我管理着 50 个集群
+- 我偏好使用 Helm Charts
+
+## 项目
+- 正在迁移微服务到 Service Mesh（Istio）
+EOF</span>
+
+<span class="token comment"># 重新启动 Agent</span>
+nanobot
+<span class="token comment"># You: 给我一些关于我当前项目的建议</span>
+<span class="token comment"># Agent 应该知道你在做 Istio 迁移</span></code></pre>
+<h3 class="atx" id="练习-3：分析-session-jsonl">练习 3：分析 Session JSONL</h3>
+<pre><code class="fenced-code-block language-bash"><span class="token comment"># 查看会话记录</span>
+<span class="token function">cat</span> sessions/cli:default.jsonl <span class="token operator">|</span> python -m json.tool --no-ensure-ascii
+
+<span class="token comment"># 统计对话轮次</span>
+<span class="token function">wc</span> -l sessions/cli:default.jsonl
+
+<span class="token comment"># 搜索特定内容</span>
+<span class="token function">grep</span> <span class="token string">"write_file"</span> sessions/cli:default.jsonl</code></pre>
+<hr>
+<h2 class="atx" id="711-面试高频题">7.11 面试高频题</h2>
+<h3 class="atx" id="题目-1：nanobot-的记忆系统是如何设计的？">题目 1：Nanobot 的记忆系统是如何设计的？</h3>
+<blockquote>
+<p><strong>参考回答</strong>：</p>
+<p>"Nanobot 采用了<strong>双层文件记忆 + 会话历史</strong>的三级记忆架构。</p>
+<p><strong>第一层是 MEMORY.md 长期记忆</strong>，存储在 workspace/memory/MEMORY.md，包含用户的关键事实、偏好、重要决策等。它的特点是<strong>始终注入 System Prompt</strong>，确保 Agent 每次对话都能访问这些核心信息。</p>
+<p><strong>第二层是 HISTORY.md 历史时间线</strong>，采用仅追加模式记录每次对话的时间戳摘要。它<strong>不会被注入上下文</strong>，只在需要时通过 read_file 工具按需检索，这样可以节省大量 token。</p>
+<p><strong>第三层是 Session JSONL 会话历史</strong>，以 JSON Lines 格式记录完整的对话内容，包括用户消息、Agent 回复和工具调用。</p>
+<p>这三层之间通过 <strong>MemoryConsolidator</strong> 连接：当会话 token 数超过 context_window_tokens 时，MemoryConsolidator 调用 LLM 将对话压缩为新的 MEMORY.md 内容和 HISTORY.md 条目，然后截断旧的会话历史。</p>
+<p>这种设计的核心优势是<strong>零外部依赖</strong>——不需要向量数据库，纯文件存储，用户和 Agent 都可以直接读写，完全透明。"</p>
+</blockquote>
+<h3 class="atx" id="题目-2：如何处理上下文窗口溢出？">题目 2：如何处理上下文窗口溢出？</h3>
+<blockquote>
+<p><strong>参考回答</strong>：</p>
+<p>"Nanobot 通过 <strong>MemoryConsolidator</strong> 处理上下文溢出，核心流程是：</p>
+<ol>
+<li><strong>检测</strong>：每次构建 Prompt 前，用 <code>estimate_prompt_tokens_chain</code> 估算总 token 数</li>
+<li><strong>压缩</strong>：超过阈值时，将'当前 MEMORY.md + 待压缩对话'发给 LLM，通过 <code>tool_choice</code> 强制调用 <code>save_memory</code> 虚拟工具</li>
+<li><strong>save_memory</strong> 返回两个结果：<code>history_entry</code>（追加到 HISTORY.md）和 <code>memory_update</code>（覆盖 MEMORY.md）</li>
+<li><strong>截断</strong>：丢弃已压缩的旧对话消息</li>
+</ol>
+<p>容错方面有三级保障：先用 tool_choice 强制调用，失败后回退 auto 模式，连续 3 次失败则直接 Raw Archive 原始对话。这确保了无论 LLM 行为如何，记忆都不会丢失。"</p>
+</blockquote>
+<h3 class="atx" id="题目-3：长期记忆与短期记忆的区别？">题目 3：长期记忆与短期记忆的区别？</h3>
+<blockquote>
+<p><strong>参考回答</strong>：</p>
+<p>"在 Nanobot 中：</p>
+<p><strong>长期记忆（MEMORY.md）</strong> 是经过 LLM 提炼的核心信息，类似人的'核心认知'——你知道自己叫什么名字、在哪里工作。它每轮对话都会被注入 System Prompt，所以 Agent 始终'知道'这些信息，但代价是消耗 token。它通过 MemoryConsolidator 整体重写更新，旧的不重要信息在重写时自然被淘汰。</p>
+<p><strong>短期记忆（Session JSONL）</strong> 是当前会话的完整对话记录，类似人的'工作记忆'。它包含所有细节但生命周期有限——当 token 超限时，旧的对话会被压缩到长期记忆后截断。</p>
+<p>两者的桥梁是 MemoryConsolidator：它把短期记忆中的关键信息'晋升'到长期记忆，把细节'沉淀'到 HISTORY.md 时间线。"</p>
+</blockquote>
+<h3 class="atx" id="题目-4：为什么不用向量数据库？">题目 4：为什么不用向量数据库？</h3>
+<blockquote>
+<p><strong>参考回答</strong>：</p>
+<p>"Nanobot 选择文件存储而非向量数据库，是一个有意识的权衡：</p>
+<ol>
+<li><strong>零依赖</strong>：不需要安装 Chroma/Pinecone/Weaviate，降低部署门槛</li>
+<li><strong>透明度</strong>：Markdown 文件人人可读，用户可以直接编辑记忆，这是向量库做不到的</li>
+<li><strong>Agent 原生理解</strong>：LLM 天然理解 Markdown，不需要向量化/反向量化</li>
+<li><strong>版本控制</strong>：可以用 git 追踪记忆变化历史</li>
+</ol>
+<p>当然这也有局限性——不支持语义检索，不适合大规模知识库。但对于 Nanobot 定位的个人助手场景，文件存储完全够用且更优雅。</p>
+<p>如果要我改进，我会在保持文件存储的基础上增加一个轻量级的索引层，比如用 TF-IDF 对 HISTORY.md 建索引，在保持简单性的同时提升检索能力。"</p>
+</blockquote>
+<h3 class="atx" id="题目-5：如果让你改进-nanobot-的记忆系统，你会怎么做？">题目 5：如果让你改进 Nanobot 的记忆系统，你会怎么做？</h3>
+<blockquote>
+<p><strong>参考回答</strong>：</p>
+<p>"我会从三个方向考虑改进：</p>
+<ol>
+<li><p><strong>增加语义检索层</strong>：在保持 Markdown 文件存储的基础上，用轻量级的 embedding 模型（如 sentence-transformers）对 HISTORY.md 的条目建向量索引。这样 Agent 可以按语义检索历史，而不仅仅是关键词匹配。</p>
+</li>
+<li><p><strong>记忆分级策略</strong>：参考操作系统的多级缓存设计——L1 是 MEMORY.md（热数据，始终注入），L2 是最近的 HISTORY.md 条目（温数据，按需加载），L3 是归档历史（冷数据，仅精确查询时检索）。</p>
+</li>
+<li><p><strong>记忆质量评估</strong>：在 MemoryConsolidator 中加入一个验证步骤——压缩后让 LLM 对比原始对话和压缩结果，检查是否遗漏了关键信息。如果遗漏严重则重新压缩。"</p>
+</li>
+</ol>
+</blockquote>
+<hr>
+<h2 class="atx" id="712-本章小结">7.12 本章小结</h2>
+<h3 class="atx" id="核心知识点">核心知识点</h3>
+<pre><code class="fenced-code-block">Nanobot 记忆系统 = MEMORY.md + HISTORY.md + Session JSONL
+
+MEMORY.md（长期记忆）
+├── 始终注入 System Prompt
+├── MemoryConsolidator 整体重写
+└── 关键事实、偏好、状态
+
+HISTORY.md（历史时间线）
+├── 仅追加模式
+├── 不注入（节省 token）
+└── 通过 read_file 按需检索
+
+Session JSONL（短期记忆）
+├── 完整对话记录
+├── _save_turn() 持久化
+└── 清理 thinking 标签 + 图片占位符
+
+MemoryConsolidator（压缩器）
+├── 触发：token 超过 context_window_tokens
+├── 流程：构造 Prompt → save_memory 工具调用
+└── 容错：tool_choice → auto → Raw Archive</code></pre>
+<h3 class="atx" id="面试记忆清单">面试记忆清单</h3>
+<table>
+<thead>
+<tr>
+<th>考点</th>
+<th>一句话回答</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>记忆架构</td>
+<td>双层文件记忆 + 会话历史的三级架构</td>
+</tr>
+<tr>
+<td>MEMORY.md</td>
+<td>长期记忆，始终注入 System Prompt</td>
+</tr>
+<tr>
+<td>HISTORY.md</td>
+<td>历史时间线，仅追加，按需检索</td>
+</tr>
+<tr>
+<td>压缩触发</td>
+<td>token 数超过 context_window_tokens</td>
+</tr>
+<tr>
+<td>压缩工具</td>
+<td>save_memory 虚拟工具（history_entry + memory_update）</td>
+</tr>
+<tr>
+<td>容错机制</td>
+<td>tool_choice → auto → Raw Archive 三级回退</td>
+</tr>
+<tr>
+<td>为什么用文件</td>
+<td>零依赖、透明可编辑、Agent 原生理解</td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote>
+<p><strong>下一章</strong>：<a href="../08-skills-and-tools/README.md">08 - 技能与工具</a> —— 深入理解 Nanobot 的 Skill 系统和工具链</p>
+</blockquote>
+</article>
+</body>
+</html>

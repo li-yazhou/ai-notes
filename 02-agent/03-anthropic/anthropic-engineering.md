@@ -8,14 +8,14 @@
 | 发布日期       | 文章题目                                                                                                                               | 中英文版本                                                     | 总结  |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --- |
 | 2026-05-25 | [How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)                               | [[2605-how-we-contain-claude-bilingual\|中英对照]]            |     |
-| 2026-04-23 | [An update on recent Claude Code quality reports](https://www.anthropic.com/engineering/april-23-postmortem)                       |                                                           |     |
-| 2026-04-08 | [Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)                |                                                           |     |
-| 2026-03-25 | [How we built Claude Code auto mode: a safer way to skip permissions](https://www.anthropic.com/engineering/claude-code-auto-mode) |                                                           |     |
-| 2026-03-24 | [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)  |                                                           |     |
-| 2026-03-06 | [Eval awareness in Claude Opus 4.6's BrowseComp performance](https://www.anthropic.com/engineering/eval-awareness-browsecomp)      |                                                           |     |
-| 2026-02-05 | [Quantifying infrastructure noise in agentic coding evals](https://www.anthropic.com/engineering/infrastructure-noise)             |                                                           |     |
-| 2026-02-05 | [Building a C compiler with a team of parallel Claudes](https://www.anthropic.com/engineering/building-c-compiler)                 |                                                           |     |
-| 2026-01-21 | [Designing AI-resistant technical evaluations](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations)           |                                                           |     |
+| 2026-04-23 | [An update on recent Claude Code quality reports](https://www.anthropic.com/engineering/april-23-postmortem)                       | [[2604-april-23-postmortem-bilingual\|中英对照]]            |     |
+| 2026-04-08 | [Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)                | [[2604-scaling-managed-agents-bilingual\|中英对照]]        |     |
+| 2026-03-25 | [How we built Claude Code auto mode: a safer way to skip permissions](https://www.anthropic.com/engineering/claude-code-auto-mode) | [[2603-claude-code-auto-mode-bilingual\|中英对照]]          |     |
+| 2026-03-24 | [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)  | [[2603-harness-design-long-running-apps-bilingual\|中英对照]] |     |
+| 2026-03-06 | [Eval awareness in Claude Opus 4.6's BrowseComp performance](https://www.anthropic.com/engineering/eval-awareness-browsecomp)      | [[2603-eval-awareness-browsecomp-bilingual\|中英对照]]     |     |
+| 2026-02-05 | [Quantifying infrastructure noise in agentic coding evals](https://www.anthropic.com/engineering/infrastructure-noise)             | [[2602-quantifying-infrastructure-noise-bilingual\|中英对照]] |     |
+| 2026-02-05 | [Building a C compiler with a team of parallel Claudes](https://www.anthropic.com/engineering/building-c-compiler)                 | [[2602-building-c-compiler-bilingual\|中英对照]]            |     |
+| 2026-01-21 | [Designing AI-resistant technical evaluations](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations)           | [[2601-designing-ai-resistant-technical-evaluations-bilingual\|中英对照]] |     |
 | 2026-01-09 | [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)                         | [[2601-demystifying-evals-for-ai-agents-bilingual\|中英对照]] |     |
 
 ## 2025

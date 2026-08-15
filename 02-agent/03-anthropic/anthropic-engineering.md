@@ -22,23 +22,23 @@
 
 | 发布日期 | 文章题目 | 中英文版本 | 总结 |
 | --- | --- | --- | --- |
-| 2025-11-26 | [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) |  |  |
-| 2025-11-24 | [Introducing advanced tool use on the Claude Developer Platform](https://www.anthropic.com/engineering/advanced-tool-use) |  |  |
-| 2025-11-04 | [Code execution with MCP: Building more efficient agents](https://www.anthropic.com/engineering/code-execution-with-mcp) |  |  |
-| 2025-10-20 | [Beyond permission prompts: making Claude Code more secure and autonomous](https://www.anthropic.com/engineering/claude-code-sandboxing) |  |  |
-| 2025-10-16 | [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) |  |  |
-| 2025-09-29 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |  |  |
-| 2025-09-17 | [A postmortem of three recent issues](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) |  |  |
-| 2025-09-11 | [Writing effective tools for agents — with agents](https://www.anthropic.com/engineering/writing-tools-for-agents) |  |  |
-| 2025-06-26 | [Desktop Extensions: One-click MCP server installation for Claude Desktop](https://www.anthropic.com/engineering/desktop-extensions) |  |  |
-| 2025-06-13 | [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) |  |  |
-| 2025-04-18 | [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices) |  |  |
-| 2025-03-20 | [The 'think' tool: Enabling Claude to stop and think in complex tool use situations](https://www.anthropic.com/engineering/claude-think-tool) |  |  |
-| 2025-01-06 | [Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet](https://www.anthropic.com/engineering/swe-bench-sonnet) |  |  |
+| 2025-11-26 | [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [[2511-effective-harnesses-for-long-running-agents-bilingual\|中英对照]] |  |
+| 2025-11-24 | [Introducing advanced tool use on the Claude Developer Platform](https://www.anthropic.com/engineering/advanced-tool-use) | [[2511-advanced-tool-use-bilingual\|中英对照]] |  |
+| 2025-11-04 | [Code execution with MCP: Building more efficient agents](https://www.anthropic.com/engineering/code-execution-with-mcp) | [[2511-code-execution-with-mcp-bilingual\|中英对照]] |  |
+| 2025-10-20 | [Beyond permission prompts: making Claude Code more secure and autonomous](https://www.anthropic.com/engineering/claude-code-sandboxing) | [[2510-claude-code-sandboxing-bilingual\|中英对照]] |  |
+| 2025-10-16 | [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) | [[2510-agent-skills-bilingual\|中英对照]] |  |
+| 2025-09-29 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | [[2509-effective-context-engineering-bilingual\|中英对照]] |  |
+| 2025-09-17 | [A postmortem of three recent issues](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) | [[2509-postmortem-three-issues-bilingual\|中英对照]] |  |
+| 2025-09-11 | [Writing effective tools for agents — with agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | [[2509-writing-tools-for-agents-bilingual\|中英对照]] |  |
+| 2025-06-26 | [Desktop Extensions: One-click MCP server installation for Claude Desktop](https://www.anthropic.com/engineering/desktop-extensions) | [[2506-desktop-extensions-bilingual\|中英对照]] |  |
+| 2025-06-13 | [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | [[2506-multi-agent-research-system-bilingual\|中英对照]] |  |
+| 2025-04-18 | [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices) | ⚠️ 暂缺（原链接已迁移至 code.claude.com，无法访问） |  |
+| 2025-03-20 | [The 'think' tool: Enabling Claude to stop and think in complex tool use situations](https://www.anthropic.com/engineering/claude-think-tool) | [[2503-claude-think-tool-bilingual\|中英对照]] |  |
+| 2025-01-06 | [Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet](https://www.anthropic.com/engineering/swe-bench-sonnet) | [[2501-swe-bench-sonnet-bilingual\|中英对照]] |  |
 
 ## 2024
 
 | 发布日期 | 文章题目 | 中英文版本 | 总结 |
 | --- | --- | --- | --- |
-| 2024-12-19 | [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) |  |  |
-| 2024-09-19 | [Introducing Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) |  |  |
+| 2024-12-19 | [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) | [[2412-building-effective-agents-bilingual\|中英对照]] |  |
+| 2024-09-19 | [Introducing Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) | [[2409-contextual-retrieval-bilingual\|中英对照]] |  |

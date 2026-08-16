@@ -1,9 +1,9 @@
 # Anthropic / Claude 双语文摘
 
-本站收录 [li-yazhou/ai-notes](https://github.com/li-yazhou/ai-notes) 笔记库中 Anthropic 官方博客的中英对照翻译，共 70 篇：
+本站收录 [li-yazhou/ai-notes](https://github.com/li-yazhou/ai-notes) 笔记库中 Anthropic 官方博客的中英对照翻译，共 77 篇：
 
 - **Anthropic 工程博客**（engineering.antropic.com，24 篇）：Agent 工程、上下文工程、评测（evals）、工具与 harness 设计等工程方法类文章
-- **Claude 产品博客**（claude.com/blog，46 篇）：Claude Code 使用方法、多智能体、Skills、hooks、工作流模式等产品实践类文章
+- **Claude 产品博客**（claude.com/blog，53 篇）：Claude Code 使用方法、多智能体、Skills、hooks、工作流模式等产品实践类文章
 
 ## 阅读说明
 
@@ -122,6 +122,20 @@
 | 2026-07-22 | [How Outtake built a cyber investigator on Claude](https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude) | [Outtake 如何基于 Claude 构建网络犯罪调查员](/02-agent/04-claude/2607-outtake-cyber-investigator/2607-outtake-cyber-investigator-bilingual.md) | ★★★ | 网络安全调查 agent 的构建 |
 | 2026-08-06 | [Millennium and Anthropic are building a digital risk analyst with Claude](https://claude.com/blog/millennium-and-anthropic-are-building-a-digital-risk-analyst-with-claude) | [Millennium 与 Anthropic 正在用 Claude 打造数字化风险分析师](/02-agent/04-claude/2608-millennium-digital-risk-analyst/2608-millennium-digital-risk-analyst-bilingual.md) | ★★★ | Millennium 构建数字风险分析师 |
 
-> 未翻译：四、Agent 安全与治理 7 篇、五、产品与模型演进 14 篇、六、行业趋势与组织 5 篇。完整清单与星级见[文章登记总表](/02-agent/04-claude/claude-blog.md)。
+#### 四、Agent 安全与治理（7 篇）
 
-（Claude 区共 46 篇已译）
+*agent 落地的权限、身份与零信任问题，代表官方安全立场*
+
+| 发布时间 | 英文原文标题 | 中英文版本 | 重要程度 | 主要看点 |
+| --- | --- | --- | --- | --- |
+| 2025-10-08 | [Beyond permission prompts: making Claude Code more secure and autonomous](https://claude.com/blog/beyond-permission-prompts-making-claude-code-more-secure-and-autonomous) | [超越权限提示：让 Claude Code 更安全也更自主](/02-agent/04-claude/2510-beyond-permission-prompts/2510-beyond-permission-prompts-bilingual.md) | ★★★★ | 权限确认之外的沙箱与安全模型，兼顾自主性 |
+| 2026-04-10 | [Preparing your security program for AI-accelerated offense](https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense) | [让你的安全项目为 AI 加速的攻击做好准备](/02-agent/04-claude/2604-security-program-ai-offense/2604-security-program-ai-offense-bilingual.md) | ★★★ | 为 AI 加速的攻击面做安全准备 |
+| 2026-05-27 | [Zero Trust for AI agents](https://claude.com/blog/zero-trust-for-ai-agents) | [面向 AI 智能体的零信任](/02-agent/04-claude/2605-zero-trust-ai-agents/2605-zero-trust-ai-agents-bilingual.md) | ★★★★ | agent 的零信任架构设计 |
+| 2026-05-27 | [Using LLMs to secure source code](https://claude.com/blog/using-llms-to-secure-source-code) | [用 LLM 保障源代码安全](/02-agent/04-claude/2605-llms-secure-source-code/2605-llms-secure-source-code-bilingual.md) | ★★★ | 用 LLM 做源码安全审查 |
+| 2026-06-24 | [Agent identity in Claude Tag: a new access model for autonomous, team-wide AI](https://claude.com/blog/agent-identity-access-model) | [Claude Tag 中的智能体身份：面向自主、团队级 AI 的新型访问模型](/02-agent/04-claude/2606-agent-identity-access-model/2606-agent-identity-access-model-bilingual.md) | ★★★★ | Claude Tag 的 agent 身份访问模型：自主 agent 的团队级权限设计 |
+| 2026-07-17 | [Zero risk isn't the job: a CISO's guide to agentic AI](https://claude.com/blog/ciso-guide-to-agentic-ai) | [零风险并非职责所在：CISO 的智能体 AI 指南](/02-agent/04-claude/2607-ciso-guide-agentic-ai/2607-ciso-guide-agentic-ai-bilingual.md) | ★★★ | CISO 视角的 agentic AI 风险与对策清单 |
+| 2026-07-21 | [How Anthropic secures its AI-native software development lifecycle](https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle) | [Anthropic 如何保障其 AI 原生软件开发生命周期的安全](/02-agent/04-claude/2607-anthropic-secures-sdlc/2607-anthropic-secures-sdlc-bilingual.md) | ★★★ | Anthropic 自身 AI 原生 SDLC 的安全实践 |
+
+> 未翻译：五、产品与模型演进 14 篇、六、行业趋势与组织 5 篇。完整清单与星级见[文章登记总表](/02-agent/04-claude/claude-blog.md)。
+
+（Claude 区共 77 篇已译）

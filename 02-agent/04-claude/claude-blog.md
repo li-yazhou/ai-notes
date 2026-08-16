@@ -11,20 +11,20 @@
 
 | 发布时间 | 文章标题 | 重要程度 | 主要看点 | 中英文版本 | 总结 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-24 | [The new rules of context engineering for Claude 5 generation models ](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) | ★★★★★ | Claude 5 代模型的上下文工程新规则，接续 effective-context-engineering 的最新官方方法论 |  |  |
-| 2026-07-22 | [Building verification loops in Claude Code with skills](https://claude.com/blog/building-verification-loops-in-claude-code-with-skills) | ★★★★ | 用 Skills 构建 agent 自验证回路，让产出可自检 |  |  |
-| 2026-06-30 | [Loop engineering: Getting started with loops](https://claude.com/blog/getting-started-with-loops) | ★★★ | Loop engineering 入门：把任务组织成可迭代的循环 |  |  |
-| 2026-06-24 | [Building effective human-agent teams](https://claude.com/blog/building-effective-human-agent-teams) | ★★★★ | 人机协作从单人模式到人机团队模式的演进，附 Anthropic 内部实际案例 |  |  |
-| 2026-06-02 | [A harness for every task: dynamic workflows in Claude Code ](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code) | ★★★ | Claude Code 动态工作流：为每类任务配置对应 harness |  |  |
-| 2026-04-22 | [Building agents that reach production systems with MCP](https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp) | ★★★ | 经 MCP 安全触达生产系统的架构设计 |  |  |
-| 2026-04-10 | [Multi-agent coordination patterns: Five approaches and when to use them](https://claude.com/blog/multi-agent-coordination-patterns) | ★★★★★ | 五种多智能体协调模式及适用场景，多智能体系统设计直接可用的分类框架 |  |  |
-| 2026-04-10 | [Seeing like an agent: how we design tools in Claude Code](https://claude.com/blog/seeing-like-an-agent) | ★★★★★ | Claude Code 工具设计哲学：从 agent 的感知方式出发设计工具界面，视角独特 |  |  |
-| 2026-04-09 | [The advisor strategy: Give agents an intelligence boost](https://claude.com/blog/the-advisor-strategy) | ★★★★ | advisor 模式：给 agent 外挂智囊以低成本提升复杂任务表现 |  |  |
-| 2026-04-02 | [Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence](https://claude.com/blog/harnessing-claudes-intelligence) | ★★★★ | Agent Harness 三种设计模式，与 engineering 板块 harness 系列呼应 |  |  |
-| 2026-03-05 | [Common workflow patterns for AI agents—and when to use them](https://claude.com/blog/common-workflow-patterns-for-ai-agents-and-when-to-use-them) | ★★★★ | 常见 agent 工作流模式（单次/链式/并行/编排）与选型建议 |  |  |
-| 2026-03-05 | [Skills explained: How Skills compares to prompts, Projects, MCP, and subagents ](https://claude.com/blog/skills-explained) | ★★★★ | Skills 与 prompts/Projects/MCP/subagents 的边界辨析与组合用法 |  |  |
-| 2026-01-23 | [Building multi-agent systems: When and how to use them](https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them) | ★★★★ | 何时该用多智能体、何时不该，反过度设计 |  |  |
-| 2026-01-22 | [Building agents with Skills: Equipping agents for specialized work](https://claude.com/blog/building-agents-with-skills-equipping-agents-for-specialized-work) | ★★★ | 用 Skills 给 agent 装配专业领域能力 |  |  |
+| 2026-07-24 | [The new rules of context engineering for Claude 5 generation models ](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) | ★★★★★ | Claude 5 代模型的上下文工程新规则，接续 effective-context-engineering 的最新官方方法论 | [[2607-new-rules-context-engineering-bilingual\|中英对照]] |  |
+| 2026-07-22 | [Building verification loops in Claude Code with skills](https://claude.com/blog/building-verification-loops-in-claude-code-with-skills) | ★★★★ | 用 Skills 构建 agent 自验证回路，让产出可自检 | [[2607-building-verification-loops-bilingual\|中英对照]] |  |
+| 2026-06-30 | [Loop engineering: Getting started with loops](https://claude.com/blog/getting-started-with-loops) | ★★★ | Loop engineering 入门：把任务组织成可迭代的循环 | [[2606-getting-started-with-loops-bilingual\|中英对照]] |  |
+| 2026-06-24 | [Building effective human-agent teams](https://claude.com/blog/building-effective-human-agent-teams) | ★★★★ | 人机协作从单人模式到人机团队模式的演进，附 Anthropic 内部实际案例 | [[2606-building-effective-human-agent-teams-bilingual\|中英对照]] |  |
+| 2026-06-02 | [A harness for every task: dynamic workflows in Claude Code ](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code) | ★★★ | Claude Code 动态工作流：为每类任务配置对应 harness | [[2606-dynamic-workflows-in-claude-code-bilingual\|中英对照]] |  |
+| 2026-04-22 | [Building agents that reach production systems with MCP](https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp) | ★★★ | 经 MCP 安全触达生产系统的架构设计 | [[2604-agents-reach-production-mcp-bilingual\|中英对照]] |  |
+| 2026-04-10 | [Multi-agent coordination patterns: Five approaches and when to use them](https://claude.com/blog/multi-agent-coordination-patterns) | ★★★★★ | 五种多智能体协调模式及适用场景，多智能体系统设计直接可用的分类框架 | [[2604-multi-agent-coordination-patterns-bilingual\|中英对照]] |  |
+| 2026-04-10 | [Seeing like an agent: how we design tools in Claude Code](https://claude.com/blog/seeing-like-an-agent) | ★★★★★ | Claude Code 工具设计哲学：从 agent 的感知方式出发设计工具界面，视角独特 | [[2604-seeing-like-an-agent-bilingual\|中英对照]] |  |
+| 2026-04-09 | [The advisor strategy: Give agents an intelligence boost](https://claude.com/blog/the-advisor-strategy) | ★★★★ | advisor 模式：给 agent 外挂智囊以低成本提升复杂任务表现 | [[2604-the-advisor-strategy-bilingual\|中英对照]] |  |
+| 2026-04-02 | [Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence](https://claude.com/blog/harnessing-claudes-intelligence) | ★★★★ | Agent Harness 三种设计模式，与 engineering 板块 harness 系列呼应 | [[2604-harnessing-claudes-intelligence-bilingual\|中英对照]] |  |
+| 2026-03-05 | [Common workflow patterns for AI agents—and when to use them](https://claude.com/blog/common-workflow-patterns-for-ai-agents-and-when-to-use-them) | ★★★★ | 常见 agent 工作流模式（单次/链式/并行/编排）与选型建议 | [[2603-common-workflow-patterns-bilingual\|中英对照]] |  |
+| 2026-03-05 | [Skills explained: How Skills compares to prompts, Projects, MCP, and subagents ](https://claude.com/blog/skills-explained) | ★★★★ | Skills 与 prompts/Projects/MCP/subagents 的边界辨析与组合用法 | [[2603-skills-explained-bilingual\|中英对照]] |  |
+| 2026-01-23 | [Building multi-agent systems: When and how to use them](https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them) | ★★★★ | 何时该用多智能体、何时不该，反过度设计 | [[2601-building-multi-agent-systems-bilingual\|中英对照]] |  |
+| 2026-01-22 | [Building agents with Skills: Equipping agents for specialized work](https://claude.com/blog/building-agents-with-skills-equipping-agents-for-specialized-work) | ★★★ | 用 Skills 给 agent 装配专业领域能力 | [[2601-building-agents-with-skills-bilingual\|中英对照]] |  |
 
 ## 二、Claude Code 深度实战
 
@@ -32,24 +32,24 @@
 
 | 发布时间 | 文章标题 | 重要程度 | 主要看点 | 中英文版本 | 总结 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-07 | [Running auto mode in production](https://claude.com/blog/auto-mode-in-production) | ★★★ | auto mode 上生产的实践与注意事项 |  |  |
-| 2026-07-16 | [How Anthropic runs large-scale code migrations with Claude Code](https://claude.com/blog/ai-code-migration) | ★★★★ | Anthropic 大规模代码迁移的编排方法与实战经验 |  |  |
-| 2026-06-18 | [Steering Claude Code: when to use CLAUDE.md, skills, hooks, and subagents](https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more) | ★★★★★ | CLAUDE.md/skills/hooks/subagents 四种扩展机制何时用哪个，一篇文章讲清分界 |  |  |
-| 2026-06-03 | [Lessons from building Claude Code: How we use skills](https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills) | ★★★★ | 官方团队自述开发 Claude Code 时内部如何使用 skills |  |  |
-| 2026-06-03 | [Running an AI-native engineering org](https://claude.com/blog/running-an-ai-native-engineering-org) | ★★★★ | AI 原生工程组织的运转方式与度量 |  |  |
-| 2026-05-20 | [Using Claude Code: The unreasonable effectiveness of HTML](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html) | ★★★ | 用 HTML 作为 agent 交互与输出媒介的奇效 |  |  |
-| 2026-05-14 | [How Claude Code works in large codebases: Best practices and where to start](https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start) | ★★★★ | 大型代码仓库中 Claude Code 的检索机制与起步策略 |  |  |
-| 2026-05-13 | [Best practices for computer and browser use with Claude](https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude) | ★★★ | computer use / browser use 的官方使用最佳实践 |  |  |
-| 2026-04-30 | [Lessons from building Claude Code: Prompt caching is everything](https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything) | ★★★★ | prompt caching 是一切：agentic coding 的成本工程细节 |  |  |
-| 2026-04-28 | [Onboarding Claude Code like a new developer: Lessons from 17 years of development](https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development) | ★★★ | 把 Claude Code 当新员工 onboarding 的经验之谈 |  |  |
-| 2026-04-15 | [Using Claude Code: session management and 1M context](https://claude.com/blog/using-claude-code-session-management-and-1m-context) | ★★★ | 会话管理与 1M 上下文的配合使用 |  |  |
-| 2026-04-14 | [Redesigning Claude Code on desktop for parallel agents](https://claude.com/blog/claude-code-desktop-redesign) | ★★★ | 桌面版为并行多 agent 重设计的交互 |  |  |
-| 2026-04-07 | [How and when to use subagents in Claude Code](https://claude.com/blog/subagents-in-claude-code) | ★★★★ | 子代理何时用、怎么配置 |  |  |
-| 2026-03-24 | [Auto mode for Claude Code](https://claude.com/blog/auto-mode) | ★★★ | auto mode 发布：更安全地跳过权限确认（工程侧文章见 03-anthropic） |  |  |
-| 2025-12-11 | [Claude Code power user customization: How to configure hooks](https://claude.com/blog/how-to-configure-hooks) | ★★★ | hooks 配置详解（power user 定制） |  |  |
-| 2025-11-25 | [Using CLAUDE.md files: Customizing Claude Code for your codebase](https://claude.com/blog/using-claude-md-files) | ★★★ | CLAUDE.md 的写法与组织方式 |  |  |
-| 2025-10-15 | [How to scale agentic coding across your engineering organization](https://claude.com/blog/scaling-agentic-coding) | ★★★ | 在工程组织内规模化推广 agentic coding |  |  |
-| 2025-07-24 | [How Anthropic teams use Claude Code](https://claude.com/blog/how-anthropic-teams-use-claude-code) | ★★★ | Anthropic 各团队使用 Claude Code 的方式集锦 |  |  |
+| 2026-08-07 | [Running auto mode in production](https://claude.com/blog/auto-mode-in-production) | ★★★ | auto mode 上生产的实践与注意事项 | [[2608-auto-mode-in-production-bilingual\|中英对照]] |  |
+| 2026-07-16 | [How Anthropic runs large-scale code migrations with Claude Code](https://claude.com/blog/ai-code-migration) | ★★★★ | Anthropic 大规模代码迁移的编排方法与实战经验 | [[2607-ai-code-migration-bilingual\|中英对照]] |  |
+| 2026-06-18 | [Steering Claude Code: when to use CLAUDE.md, skills, hooks, and subagents](https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more) | ★★★★★ | CLAUDE.md/skills/hooks/subagents 四种扩展机制何时用哪个，一篇文章讲清分界 | [[2606-steering-claude-code-bilingual\|中英对照]] |  |
+| 2026-06-03 | [Lessons from building Claude Code: How we use skills](https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills) | ★★★★ | 官方团队自述开发 Claude Code 时内部如何使用 skills | [[2606-lessons-claude-code-skills-bilingual\|中英对照]] |  |
+| 2026-06-03 | [Running an AI-native engineering org](https://claude.com/blog/running-an-ai-native-engineering-org) | ★★★★ | AI 原生工程组织的运转方式与度量 | [[2606-ai-native-engineering-org-bilingual\|中英对照]] |  |
+| 2026-05-20 | [Using Claude Code: The unreasonable effectiveness of HTML](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html) | ★★★ | 用 HTML 作为 agent 交互与输出媒介的奇效 | [[2605-unreasonable-effectiveness-html-bilingual\|中英对照]] |  |
+| 2026-05-14 | [How Claude Code works in large codebases: Best practices and where to start](https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start) | ★★★★ | 大型代码仓库中 Claude Code 的检索机制与起步策略 | [[2605-claude-code-large-codebases-bilingual\|中英对照]] |  |
+| 2026-05-13 | [Best practices for computer and browser use with Claude](https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude) | ★★★ | computer use / browser use 的官方使用最佳实践 | [[2605-computer-browser-use-bilingual\|中英对照]] |  |
+| 2026-04-30 | [Lessons from building Claude Code: Prompt caching is everything](https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything) | ★★★★ | prompt caching 是一切：agentic coding 的成本工程细节 | [[2604-lessons-claude-code-prompt-caching-bilingual\|中英对照]] |  |
+| 2026-04-28 | [Onboarding Claude Code like a new developer: Lessons from 17 years of development](https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development) | ★★★ | 把 Claude Code 当新员工 onboarding 的经验之谈 | [[2604-onboarding-claude-code-bilingual\|中英对照]] |  |
+| 2026-04-15 | [Using Claude Code: session management and 1M context](https://claude.com/blog/using-claude-code-session-management-and-1m-context) | ★★★ | 会话管理与 1M 上下文的配合使用 | [[2604-session-management-1m-context-bilingual\|中英对照]] |  |
+| 2026-04-14 | [Redesigning Claude Code on desktop for parallel agents](https://claude.com/blog/claude-code-desktop-redesign) | ★★★ | 桌面版为并行多 agent 重设计的交互 | [[2604-claude-code-desktop-redesign-bilingual\|中英对照]] |  |
+| 2026-04-07 | [How and when to use subagents in Claude Code](https://claude.com/blog/subagents-in-claude-code) | ★★★★ | 子代理何时用、怎么配置 | [[2604-subagents-in-claude-code-bilingual\|中英对照]] |  |
+| 2026-03-24 | [Auto mode for Claude Code](https://claude.com/blog/auto-mode) | ★★★ | auto mode 发布：更安全地跳过权限确认（工程侧文章见 03-anthropic） | [[2603-auto-mode-bilingual\|中英对照]] |  |
+| 2025-12-11 | [Claude Code power user customization: How to configure hooks](https://claude.com/blog/how-to-configure-hooks) | ★★★ | hooks 配置详解（power user 定制） | [[2512-how-to-configure-hooks-bilingual\|中英对照]] |  |
+| 2025-11-25 | [Using CLAUDE.md files: Customizing Claude Code for your codebase](https://claude.com/blog/using-claude-md-files) | ★★★ | CLAUDE.md 的写法与组织方式 | [[2511-using-claude-md-files-bilingual\|中英对照]] |  |
+| 2025-10-15 | [How to scale agentic coding across your engineering organization](https://claude.com/blog/scaling-agentic-coding) | ★★★ | 在工程组织内规模化推广 agentic coding | [[2510-scaling-agentic-coding-bilingual\|中英对照]] |  |
+| 2025-07-24 | [How Anthropic teams use Claude Code](https://claude.com/blog/how-anthropic-teams-use-claude-code) | ★★★ | Anthropic 各团队使用 Claude Code 的方式集锦 | [[2507-how-anthropic-teams-use-claude-code-bilingual\|中英对照]] |  |
 
 ## 三、前沿客户案例
 

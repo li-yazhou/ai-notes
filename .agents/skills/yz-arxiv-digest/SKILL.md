@@ -1,0 +1,86 @@
+---
+name: yz-arxiv-digest
+description: 整理 arXiv 某月份、某主题的论文并产出月度中文文摘：API 抓取 → 过滤 → 分批子代理分类 → 主流程精选成文 → 全量校验。当用户要求"整理 XX 月份（或 YYMM/2026.XX）的 XX 主题论文 / arXiv 论文 / 月度文摘 / 论文地图"，或说"照 2604/2606 的做法整理 XX 月"时使用。给出月份与主题即触发，无需用户再说细节。
+---
+
+# arXiv 月度主题论文文摘
+
+把一个月份、一个主题的 arXiv 论文整理成一份月度中文文摘（对齐 `02-agent/2607-arxiv-ai agent-by zai` 的格式）。本 skill 是 2026.04/2026.06 两期实战的固化，所有坑都已内置规避。
+
+## 输入（缺省时按默认执行，不必逐项询问用户）
+
+| 项 | 默认 | 说明 |
+|---|---|---|
+| 月份 | 必填（YYMM，如 2605） | 论文 ID 前缀与提交日期窗口 |
+| 主题关键词组 | agent 主题三组查询（见 scripts/fetch.py） | 其他主题用 `--queries` 传入自定义文件 |
+| 输出目录 | `02-agent/YYMM-arxiv-<topic>-by zai/` | 文件名与目录同名，`.md` |
+| 排除 | LLM 本体论文（模型/预训练/后训练/推理加速/模型发布） | 用户有 LLM 专题单独处理 |
+| 维度 | 见 references/subagent-prompt.md 的维度表 | 按主题可增删（如 2604 期 subagent 并入 multiagent） |
+
+只读操作（curl/网络检索/本地查看）一律直接执行不询问；**git commit/push 必须等用户明确说"提交"**。
+
+## 流程
+
+工作目录 `/tmp/arxiv<YYMM>/`（自动创建 `raw/out/batches/curated`）。
+
+### ① 抓取（后台运行，约 3-8 分钟）
+
+```bash
+cd /tmp/arxiv2605 && python3 <skill目录>/scripts/fetch.py --month 2605
+```
+
+- 必须 **https**（http 会 301）；100 篇/页 + 3 秒间隔分页；按 ID 去重后写 `out/merged.json`。
+- 用 `run_in_background` 跑；**不要**接 `| tail`（管道缓冲会吞掉进度输出），等完成通知即可。
+- 单月 agent 主题约 2500-3100 篇属正常。
+
+### ② 过滤分批
+
+```bash
+python3 <skill目录>/scripts/filter_batch.py --month 2605
+```
+
+类别白名单 + LLM 信号正则过滤（其他主题用 `--signal` 覆盖），产出 `batches/batch-NN.md`（约 110 篇/批）。
+
+### ③ 分批子代理分类（限流关键）
+
+- **每波最多 4 个并发** general-purpose 子代理（8 个并发会触发 1302 限流）；每代理读 2 个 batch，写 `out/rows-N.md`。
+- 提示词模板：读 `references/subagent-prompt.md`，替换 `{YYMM}`、batch 文件、rows 文件名。
+- 失败/超 25 分钟未落盘的批次：**停掉卡死任务，把该 batch 拆成单批的小任务重跑**（输出改 rows-9/rows-10 等不冲突的名字，合并时按 ID 去重兜底）。
+
+### ④ 合并
+
+```bash
+python3 <skill目录>/scripts/merge_rows.py --month 2605
+```
+
+产出 `curated/<dim>.md` 分维度文件（按日期倒序）。合并数应 ≈ 各代理 KEEP 之和；若为 0，九成是脚本月份参数没换。
+
+### ⑤ 通读精选（主流程亲自做）
+
+逐个 Read `curated/*.md` 全部维度文件，按**证据强度（真实数据/可复跑基准/消融）× 新颖性 × 影响面**精选入正文：
+
+- 核心维度各 15-40 行；domain 只留 12-15 行代表性工作并在节首注明"其余 N+ 篇未列入"；
+- 每篇一行：`| [显示标题](https://arxiv.org/abs/ID) | MM-DD | 一句话要点 | `标签` |`，要点 ≤50 字、必须带摘要中的数字，**逐行从 curated 文件转录，不要凭记忆写**（实战中凭记忆曾把别月论文写错进来）；
+- 显示标题可用缩写/改写（如系统名），但必须能对应原题。
+
+### ⑥ 成文
+
+格式模板：读 `references/doc-template.md`。要点：frontmatter（type: digest / month / count / tags）→ 头部采集说明 → **〇、本月趋势**（8-10 条，只写多篇独立工作收敛的结论，带论文名与数字，不基于单篇下判断）→ 各维度表格 → **本月必读 Top 12**（一行一条、加粗、说明入选理由）→ 附：方法与采集说明（含各环节篇数）。count 等 ⑦ 校验后再回填实际数。
+
+### ⑦ 全量校验（必做，实战证明必要）
+
+```bash
+python3 <skill目录>/scripts/validate.py --doc <文摘路径> --db /tmp/arxiv2605/out/filtered.json --month 2605
+```
+
+- 硬性项：每个链接 ID 必须存在于 filtered.json；日期列必须等于 API published；重复 ID 只允许来自"必读"复引。
+- 标题差异项逐条人工确认（缩写/改写 OK，张冠李戴必须修）。
+- 已知错误模式：子代理 ID 笔误（数字错一位）、日期差一天、主流程跨月误写、同 ID 双行。修复后重跑至 0 issue，再回填 count。
+
+### ⑧ 提交
+
+等用户说"提交"。默认不包含 `.obsidian/workspace.json`；修正既有期数的笔误与新文摘分开 commit。
+
+## 数量参考（agent 主题实测）
+
+抓取 2700-3100 → 过滤后 1400-1700 → KEEP 1180-1360 → 入正文 260-330。其他主题按比例缩放；正文宁缺毋滥。

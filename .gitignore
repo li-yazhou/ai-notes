@@ -1,5 +1,6 @@
 # JetBrains IDE (machine-specific, do not commit)
 .idea/
+.obsidian/
 
 # macOS
 .DS_Store

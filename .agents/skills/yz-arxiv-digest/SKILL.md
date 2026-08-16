@@ -80,7 +80,7 @@ python3 <skill目录>/scripts/validate.py --doc <文摘路径> --db /tmp/arxiv26
 
 ### ⑧ 提交
 
-等用户说"提交"。默认不包含 `.obsidian/workspace.json`；修正既有期数的笔误与新文摘分开 commit。
+等用户说"提交"。`.obsidian/` 已在 `.gitignore` 中且已移出跟踪，正常 `git add` 不会带入；修正既有期数的笔误与新文摘分开 commit。
 
 ## 数量参考（agent 主题实测）
 

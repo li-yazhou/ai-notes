@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0917a7b53bfce244",
+        "id": "22bce58acec512f3",
         "type": "tabs",
         "children": [
           {
-            "id": "13029e1cbefa3677",
+            "id": "f01bb49375403ade",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-agent/03-anthropic/2605-how-we-contain-claude-bilingual.md",
+                "file": "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models-bilingual.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2605-how-we-contain-claude-bilingual"
+              "title": "2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models-bilingual"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 476.5703125
   },
   "right": {
     "id": "1fb3b312c729e6fe",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-agent/03-anthropic/2605-how-we-contain-claude-bilingual.md",
+                "file": "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models-bilingual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-agent/03-anthropic/2605-how-we-contain-claude-bilingual.md",
+                "file": "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models-bilingual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-agent/03-anthropic/2605-how-we-contain-claude-bilingual.md",
+                "file": "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models-bilingual.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,13 +188,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "75ff4ad21a0414c2",
+  "active": "f01bb49375403ade",
   "lastOpenFiles": [
-    "README.md",
-    "02-agent/03-anthropic/anthropic-engineering.md",
-    "02-agent/2607-arxiv-ai agent llm papers-by chatgpt/02-分类统计.md",
-    "02-agent/2607-arxiv-ai agent llm papers-by chatgpt/00-索引.md",
+    "02-agent/2607-arxiv-ai agent-by gpt/2607-arxiv-ai agent-by gpt.xlsx",
+    "02-agent/2607-arxiv-ai agent-by gpt/2607-arxiv-ai agent llm papers-by chatgpt.xlsx",
+    "02-agent/2607-arxiv-ai agent-by gpt/05-标签明细.md",
+    "02-agent/2607-arxiv-ai agent-by gpt/04-全部论文.md",
+    "02-agent/2607-arxiv-ai agent-by gpt/03-重点论文.md",
+    "02-agent/2607-arxiv-ai agent-by gpt/02-分类统计.md",
+    "02-agent/2607-arxiv-ai agent-by gpt/01-说明.md",
+    "02-agent/2607-arxiv-ai agent-by gpt/00-索引.md",
+    "02-agent/2607-arxiv-ai agent-by gpt",
+    "02-agent/2607-arxiv-ai agent-by zai/2607-arxiv-ai agent-by zai.md",
+    "02-agent/2607-arxiv-ai agent-by zai/2607-arxiv-ai agent llm papers-by zai.md",
+    "02-agent/2607-arxiv-ai agent-by zai",
+    "未命名",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/images/palm-errors-fixed.svg",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/images/palm-error-analysis.svg",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/images/cot-teaser.png",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/images/cot-examples.svg",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models-bilingual.md",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.md",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement-bilingual/2607-harness-engineering-self-improvement-zh.md",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models/images",
+    "02-agent/01-agent/2201-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "02-agent/01-agent/extracted.md",
+    "02-agent/01-agent/images/palm-errors-fixed.svg",
+    "02-agent/01-agent/images/palm-error-analysis.svg",
+    "02-agent/01-agent/images/cot-examples.svg",
+    "02-agent/01-agent/images",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement/images/self-harness.png",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement/images/openai-agent-loop.png",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement/images/meta-harness.png",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement/images",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement/2607-harness-engineering-self-improvement-zh.md",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement/2607-harness-engineering-self-improvement-bilingual.md",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement",
+    "02-agent/01-agent/2607-harness-engineering-self-improvement-bilingual/2607-harness-engineering-self-improvement-bilingual.md",
+    "03-basemodel/11-deepseek/2401-DeepSeek LLM Scaling Open-Source Language Models with Longtermism.md",
+    "02-agent/01-agent/2210-ReAct Synergizing Reasoning and Acting in Language Models/2210-ReAct Synergizing Reasoning and Acting in Language Models-bilingual.md",
+    "02-agent/01-agent/2210-ReAct Synergizing Reasoning and Acting in Language Models/images",
+    "02-agent/01-agent/2210-ReAct Synergizing Reasoning and Acting in Language Models/2210-ReAct Synergizing Reasoning and Acting in Language Models.md",
+    "02-agent/01-agent/2210-ReAct Synergizing Reasoning and Acting in Language Models-bilingual/2210-ReAct Synergizing Reasoning and Acting in Language Models.md",
+    "02-agent/01-agent/2210-ReAct Synergizing Reasoning and Acting in Language Models-bilingual/2210-ReAct Synergizing Reasoning and Acting in Language Models-bilingual.md",
     "02-agent/AI Agent 与大模型评测论文地图.md",
-    "01-aicoding/01-pi/Pi Agent评测方案与实现分析.md"
+    "02-agent/01-agent/2210-ReAct Synergizing Reasoning and Acting in Language Models.md",
+    "02-agent/03-anthropic/anthropic-engineering.md",
+    "02-agent/03-anthropic/2511-effective-harnesses-for-long-running-agents-bilingual/2511-effective-harnesses-for-long-running-agents-bilingual.md",
+    "02-agent/03-anthropic/2605-how-we-contain-claude/2605-how-we-contain-claude-bilingual.md"
   ]
 }

@@ -451,7 +451,7 @@ tags:
 | [Cordon](https://arxiv.org/abs/2606.17573) | 06-16 | 语义事务边界：暂存不可逆效果、验证后提交，支持回滚恢复与审计 | `method/transaction` |
 | [Goal-Autopilot](https://arxiv.org/abs/2606.11688) | 06-10 | 反捏造防火墙：状态外置门控 FSM + 硬底线禁未验证完成声明，证"无假成功"定理 | `defense/fabrication` |
 | [Strained Coherence](https://arxiv.org/abs/2606.07889) | 06-05 | "紧张一致性"预失败信号：agent 自认问题仍照做，被标记轨迹失败率 94% vs 未标记 46% | `method/monitoring` |
-| [TRACE (Trajectory Monitoring)](https://arxiv.org/abs/2606.07054) | 06-04 | 跨步证据聚合监控长程轨迹：Triage-Inspect-Judge 循环，SHADE-Arena 上 F1 0.713 | `method/monitoring` |
+| [TRACE (Trajectory Monitoring)](https://arxiv.org/abs/2606.07054) | 06-05 | 跨步证据聚合监控长程轨迹：Triage-Inspect-Judge 循环，SHADE-Arena 上 F1 0.713 | `method/monitoring` |
 | [AI Agents Enable Adaptive Computer Worms](https://arxiv.org/abs/2606.03811) | 06-02 | 开源 LLM 驱动的自适应蠕虫按目标定制攻击策略，跨 Linux/Windows/IoT 真实漏洞自传播 | `attack/worm` |
 | [AI Snitches Get Glitches](https://arxiv.org/abs/2606.25836) | 06-24 | 形式化 agentic 监控风险并建 SurveilBench：部分模型会自发向公司/教育/警方报告用户 | `study/surveillance` |
 
@@ -472,7 +472,7 @@ tags:
 | [NMRAgent](https://arxiv.org/abs/2606.29776) | 06-29 | 整合谱学工具与化学知识图谱，模仿专家演绎规划 NMR 分子结构解析并给证据 | `env/chemistry` |
 | [MDForge](https://arxiv.org/abs/2606.12916) | 06-11 | 把分子动力学流水线设计当开放式代码生成，多专家辩论增密稀疏奖励，SAMPL 上比肩人类专家 | `env/chemistry` |
 | [CatDT](https://arxiv.org/abs/2606.05050) | 06-03 | 自进化多 agent 数字孪生：8 agent+27 工具单 GPU 5-30 分钟完成催化预测，降本超千倍 | `env/chemistry` |
-| [MeDxAgent](https://arxiv.org/abs/2606.03425) | 06-02 | MeDxBench 4421 例跨 20 科交互问诊：多智能体会诊准确率升 10.3%，弥合 52.3% 的 oracle 差距 | `env/medical` |
+| [MeDxAgent](https://arxiv.org/abs/2606.03416) | 06-02 | MeDxBench 4421 例跨 20 科交互问诊：多智能体会诊准确率升 10.3%，弥合 52.3% 的 oracle 差距 | `env/medical` |
 | [DEEPMED Search](https://arxiv.org/abs/2606.29746) | 06-29 | 开源医疗 deep research 平台：源自适应路由分发子查询，因果一致多 agent 辩论内省验证证据 | `env/medical` |
 | [The Web4 Agent Economy](https://arxiv.org/abs/2606.25876) | 06-24 | 首个 Web4 agent 生态大规模实证：agent 持钱包执行链上交易，MCP/x402/EIP-8004 支撑工具支付身份 | `env/economy` |
 | [CMIP-forge](https://arxiv.org/abs/2606.17076) | 06-10 | 6,581 篇 CMIP6 文献 + ESGF 数据：工具增强 worker 执行分析，独立评审模型面板审计方法学 | `env/climate` |

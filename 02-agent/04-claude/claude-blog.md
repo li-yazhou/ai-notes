@@ -78,13 +78,13 @@
 
 | 发布时间 | 文章标题 | 重要程度 | 主要看点 | 中英文版本 | 总结 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-21 | [How Anthropic secures its AI-native software development lifecycle](https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle) | ★★★ | Anthropic 自身 AI 原生 SDLC 的安全实践 |  |  |
-| 2026-07-17 | [Zero risk isn't the job: a CISO's guide to agentic AI](https://claude.com/blog/ciso-guide-to-agentic-ai) | ★★★ | CISO 视角的 agentic AI 风险与对策清单 |  |  |
-| 2026-06-24 | [Agent identity in Claude Tag: a new access model for autonomous, team-wide AI](https://claude.com/blog/agent-identity-access-model) | ★★★★ | Claude Tag 的 agent 身份访问模型：自主 agent 的团队级权限设计 |  |  |
-| 2026-05-27 | [Zero Trust for AI agents](https://claude.com/blog/zero-trust-for-ai-agents) | ★★★★ | agent 的零信任架构设计 |  |  |
-| 2026-05-27 | [Using LLMs to secure source code](https://claude.com/blog/using-llms-to-secure-source-code) | ★★★ | 用 LLM 做源码安全审查 |  |  |
-| 2026-04-10 | [Preparing your security program for AI-accelerated offense](https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense) | ★★★ | 为 AI 加速的攻击面做安全准备 |  |  |
-| 2025-10-08 | [Beyond permission prompts: making Claude Code more secure and autonomous](https://claude.com/blog/beyond-permission-prompts-making-claude-code-more-secure-and-autonomous) | ★★★★ | 权限确认之外的沙箱与安全模型，兼顾自主性 |  |  |
+| 2026-07-21 | [How Anthropic secures its AI-native software development lifecycle](https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle) | ★★★ | Anthropic 自身 AI 原生 SDLC 的安全实践 | [[2607-anthropic-secures-sdlc-bilingual\|中英对照]] |  |
+| 2026-07-17 | [Zero risk isn't the job: a CISO's guide to agentic AI](https://claude.com/blog/ciso-guide-to-agentic-ai) | ★★★ | CISO 视角的 agentic AI 风险与对策清单 | [[2607-ciso-guide-agentic-ai-bilingual\|中英对照]] |  |
+| 2026-06-24 | [Agent identity in Claude Tag: a new access model for autonomous, team-wide AI](https://claude.com/blog/agent-identity-access-model) | ★★★★ | Claude Tag 的 agent 身份访问模型：自主 agent 的团队级权限设计 | [[2606-agent-identity-access-model-bilingual\|中英对照]] |  |
+| 2026-05-27 | [Zero Trust for AI agents](https://claude.com/blog/zero-trust-for-ai-agents) | ★★★★ | agent 的零信任架构设计 | [[2605-zero-trust-ai-agents-bilingual\|中英对照]] |  |
+| 2026-05-27 | [Using LLMs to secure source code](https://claude.com/blog/using-llms-to-secure-source-code) | ★★★ | 用 LLM 做源码安全审查 | [[2605-llms-secure-source-code-bilingual\|中英对照]] |  |
+| 2026-04-10 | [Preparing your security program for AI-accelerated offense](https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense) | ★★★ | 为 AI 加速的攻击面做安全准备 | [[2604-security-program-ai-offense-bilingual\|中英对照]] |  |
+| 2025-10-08 | [Beyond permission prompts: making Claude Code more secure and autonomous](https://claude.com/blog/beyond-permission-prompts-making-claude-code-more-secure-and-autonomous) | ★★★★ | 权限确认之外的沙箱与安全模型，兼顾自主性 | [[2510-beyond-permission-prompts-bilingual\|中英对照]] |  |
 
 ## 五、产品与模型演进
 

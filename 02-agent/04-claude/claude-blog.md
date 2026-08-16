@@ -92,11 +92,11 @@
 
 | 发布时间 | 文章标题 | 重要程度 | 主要看点 | 中英文版本 | 总结 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-28 | [Bringing MCP 2026-07-28 to Claude](https://claude.com/blog/bringing-mcp-2026-07-28-to-claude) | ★★★ | MCP 2026-07-28 新规范在 Claude 的落地 |  |  |
-| 2026-07-24 | [Claude models explained: choosing the best model for your use case](https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case) | ★★★ | 全模型线官方选型指南 |  |  |
-| 2026-07-06 | [A field guide to Claude Fable 5: Finding your unknowns](https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns) | ★★★ | Fable 5 使用心法：用模型发现你的未知 |  |  |
-| 2026-06-10 | [The evolution of agentic surfaces: building with Claude Managed Agents](https://claude.com/blog/building-with-claude-managed-agents) | ★★★ | agentic surfaces 演进论：Managed Agents 的产品思想 |  |  |
-| 2026-06-05 | [The Claude Cowork product guide](https://claude.com/blog/the-claude-cowork-product-guide) | ★★★ | Cowork 产品全景指南 |  |  |
+| 2026-07-28 | [Bringing MCP 2026-07-28 to Claude](https://claude.com/blog/bringing-mcp-2026-07-28-to-claude) | ★★★ | MCP 2026-07-28 新规范在 Claude 的落地 | [[2607-bringing-mcp-2026-07-28-bilingual\|中英对照]] |  |
+| 2026-07-24 | [Claude models explained: choosing the best model for your use case](https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case) | ★★★ | 全模型线官方选型指南 | [[2607-claude-models-explained-bilingual\|中英对照]] |  |
+| 2026-07-06 | [A field guide to Claude Fable 5: Finding your unknowns](https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns) | ★★★ | Fable 5 使用心法：用模型发现你的未知 | [[2607-fable-field-guide-bilingual\|中英对照]] |  |
+| 2026-06-10 | [The evolution of agentic surfaces: building with Claude Managed Agents](https://claude.com/blog/building-with-claude-managed-agents) | ★★★ | agentic surfaces 演进论：Managed Agents 的产品思想 | [[2606-agentic-surfaces-managed-agents-bilingual\|中英对照]] |  |
+| 2026-06-05 | [The Claude Cowork product guide](https://claude.com/blog/the-claude-cowork-product-guide) | ★★★ | Cowork 产品全景指南 | [[2606-cowork-product-guide-bilingual\|中英对照]] |  |
 | 2026-05-19 | [New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration](https://claude.com/blog/new-in-claude-managed-agents) | ★★★ | Managed Agents 更新：dreaming/outcomes/多智能体编排 |  |  |
 | 2026-05-19 | [New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates) | ★★★ | Managed Agents 更新：自托管沙箱与 MCP 隧道 |  |  |
 | 2026-04-23 | [Built-in memory for Claude Managed Agents](https://claude.com/blog/claude-managed-agents-memory) | ★★★ | Managed Agents 内置记忆 |  |  |

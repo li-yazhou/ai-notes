@@ -1,9 +1,9 @@
 # Anthropic / Claude 双语文摘
 
-本站收录 [li-yazhou/ai-notes](https://github.com/li-yazhou/ai-notes) 笔记库中 Anthropic 官方博客的中英对照翻译，共 77 篇：
+本站收录 [li-yazhou/ai-notes](https://github.com/li-yazhou/ai-notes) 笔记库中 Anthropic 官方博客的中英对照翻译，共 96 篇：
 
-- **Anthropic 工程博客**（engineering.antropic.com，24 篇）：Agent 工程、上下文工程、评测（evals）、工具与 harness 设计等工程方法类文章
-- **Claude 产品博客**（claude.com/blog，53 篇）：Claude Code 使用方法、多智能体、Skills、hooks、工作流模式等产品实践类文章
+- **Anthropic 工程博客**（engineering.anthropic.com，24 篇）：Agent 工程、上下文工程、评测（evals）、工具与 harness 设计等工程方法类文章
+- **Claude 产品博客**（claude.com/blog，72 篇）：Claude Code 使用方法、多智能体、Skills、hooks、工作流模式等产品实践类文章
 
 ## 阅读说明
 
@@ -51,7 +51,7 @@
 | 2026-04-23 | [An update on recent Claude Code quality reports](https://www.anthropic.com/engineering/april-23-postmortem) | [关于近期 Claude Code 质量问题报告的更新](/02-agent/03-anthropic/2604-april-23-postmortem/2604-april-23-postmortem-bilingual.md) |
 | 2026-05-25 | [How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude) | [我们如何在各个产品中收容 Claude](/02-agent/03-anthropic/2605-how-we-contain-claude/2605-how-we-contain-claude-bilingual.md) |
 
-### Claude 产品博客（claude.com/blog）
+### Claude 产品博客（claude.com/blog，72 篇）
 
 [文章登记总表（星级与未译篇目）](/02-agent/04-claude/claude-blog.md)
 
@@ -136,6 +136,37 @@
 | 2026-07-17 | [Zero risk isn't the job: a CISO's guide to agentic AI](https://claude.com/blog/ciso-guide-to-agentic-ai) | [零风险并非职责所在：CISO 的智能体 AI 指南](/02-agent/04-claude/2607-ciso-guide-agentic-ai/2607-ciso-guide-agentic-ai-bilingual.md) | ★★★ | CISO 视角的 agentic AI 风险与对策清单 |
 | 2026-07-21 | [How Anthropic secures its AI-native software development lifecycle](https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle) | [Anthropic 如何保障其 AI 原生软件开发生命周期的安全](/02-agent/04-claude/2607-anthropic-secures-sdlc/2607-anthropic-secures-sdlc-bilingual.md) | ★★★ | Anthropic 自身 AI 原生 SDLC 的安全实践 |
 
-> 未翻译：五、产品与模型演进 14 篇、六、行业趋势与组织 5 篇。完整清单与星级见[文章登记总表](/02-agent/04-claude/claude-blog.md)。
+#### 五、产品与模型演进（14 篇）
 
-（Claude 区共 77 篇已译）
+*Claude 生态一年内的关键产品节点，理解 Managed Agents/Cowork/Skills/MCP 的演进主线*
+
+| 发布时间 | 英文原文标题 | 中英文版本 | 重要程度 | 主要看点 |
+| --- | --- | --- | --- | --- |
+| 2025-04-15 | [Claude takes research to new places](https://claude.com/blog/research) | [Claude 把研究带向新境界](/02-agent/04-claude/2504-claude-research/2504-claude-research-bilingual.md) | ★★★ | Research 深度研究功能 |
+| 2025-09-11 | [Bringing memory to Claude](https://claude.com/blog/memory) | [为 Claude 带来记忆](/02-agent/04-claude/2509-bringing-memory-to-claude/2509-bringing-memory-to-claude-bilingual.md) | ★★★ | 记忆功能发布 |
+| 2025-10-16 | [Introducing Agent Skills](https://claude.com/blog/skills) | [Agent Skills 正式发布](/02-agent/04-claude/2510-introducing-agent-skills/2510-introducing-agent-skills-bilingual.md) | ★★★★★ | Agent Skills 发布：Claude 生态最关键的扩展机制（即本库 yz-* skill 用的那套） |
+| 2025-10-31 | [What is Model Context Protocol? Connect AI to your world](https://claude.com/blog/what-is-model-context-protocol) | [什么是模型上下文协议（MCP）？让 AI 连接你的世界](/02-agent/04-claude/2510-what-is-mcp/2510-what-is-mcp-bilingual.md) | ★★★★ | MCP 官方科普：AI 如何连接外部世界 |
+| 2026-03-23 | [Put Claude to work on your computer](https://claude.com/blog/dispatch-and-computer-use) | [让 Claude 在你的电脑上工作](/02-agent/04-claude/2603-dispatch-and-computer-use/2603-dispatch-and-computer-use-bilingual.md) | ★★★ | Dispatch 与 computer use 功能 |
+| 2026-04-08 | [Claude Managed Agents: get to production 10x faster](https://claude.com/blog/claude-managed-agents) | [Claude Managed Agents：10 倍速直达生产环境](/02-agent/04-claude/2604-claude-managed-agents/2604-claude-managed-agents-bilingual.md) | ★★★★ | Managed Agents 发布：宣称 10 倍速度上生产的新产品形态 |
+| 2026-04-23 | [Built-in memory for Claude Managed Agents](https://claude.com/blog/claude-managed-agents-memory) | [Claude Managed Agents 的内置记忆](/02-agent/04-claude/2604-managed-agents-memory/2604-managed-agents-memory-bilingual.md) | ★★★ | Managed Agents 内置记忆 |
+| 2026-05-19 | [New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration](https://claude.com/blog/new-in-claude-managed-agents) | [Claude Managed Agents 新功能：dreaming、outcomes 与多智能体编排](/02-agent/04-claude/2605-new-in-managed-agents/2605-new-in-managed-agents-bilingual.md) | ★★★ | Managed Agents 更新：dreaming/outcomes/多智能体编排 |
+| 2026-05-19 | [New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates) | [Claude Managed Agents 新功能：自托管沙箱与 MCP 隧道](/02-agent/04-claude/2605-managed-agents-sandboxes-tunnels/2605-managed-agents-sandboxes-tunnels-bilingual.md) | ★★★ | Managed Agents 更新：自托管沙箱与 MCP 隧道 |
+| 2026-06-05 | [The Claude Cowork product guide](https://claude.com/blog/the-claude-cowork-product-guide) | [Claude Cowork 产品指南](/02-agent/04-claude/2606-cowork-product-guide/2606-cowork-product-guide-bilingual.md) | ★★★ | Cowork 产品全景指南 |
+| 2026-06-10 | [The evolution of agentic surfaces: building with Claude Managed Agents](https://claude.com/blog/building-with-claude-managed-agents) | [智能体界面的演进：使用 Claude Managed Agents 构建](/02-agent/04-claude/2606-agentic-surfaces-managed-agents/2606-agentic-surfaces-managed-agents-bilingual.md) | ★★★ | agentic surfaces 演进论：Managed Agents 的产品思想 |
+| 2026-07-06 | [A field guide to Claude Fable 5: Finding your unknowns](https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns) | [Claude Fable 5 实战指南：找出你的未知项](/02-agent/04-claude/2607-fable-field-guide/2607-fable-field-guide-bilingual.md) | ★★★ | Fable 5 使用心法：用模型发现你的未知 |
+| 2026-07-24 | [Claude models explained: choosing the best model for your use case](https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case) | [Claude 模型详解：如何为你的用例选择最合适的模型](/02-agent/04-claude/2607-claude-models-explained/2607-claude-models-explained-bilingual.md) | ★★★ | 全模型线官方选型指南 |
+| 2026-07-28 | [Bringing MCP 2026-07-28 to Claude](https://claude.com/blog/bringing-mcp-2026-07-28-to-claude) | [将 MCP 2026-07-28 带入 Claude](/02-agent/04-claude/2607-bringing-mcp-2026-07-28/2607-bringing-mcp-2026-07-28-bilingual.md) | ★★★ | MCP 2026-07-28 新规范在 Claude 的落地 |
+
+#### 六、行业趋势与组织（5 篇）
+
+*趋势判断与组织层面的思考*
+
+| 发布时间 | 英文原文标题 | 中英文版本 | 重要程度 | 主要看点 |
+| --- | --- | --- | --- | --- |
+| 2025-12-09 | [How enterprises are building AI agents in 2026](https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026) | [2026 年企业如何构建 AI 智能体](/02-agent/04-claude/2512-enterprises-building-ai-agents-2026/2512-enterprises-building-ai-agents-2026-bilingual.md) | ★★★ | 企业构建 AI agent 的现状调查 |
+| 2026-01-21 | [Eight trends defining how software gets built in 2026](https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026) | [定义 2026 年软件构建方式的八大趋势](/02-agent/04-claude/2601-eight-trends-2026/2601-eight-trends-2026-bilingual.md) | ★★★★ | 2026 软件构建八大趋势（年度必读） |
+| 2026-03-19 | [Product management on the AI exponential ](https://claude.com/blog/product-management-on-the-ai-exponential) | [AI 指数曲线上的产品管理](/02-agent/04-claude/2603-product-management-ai-exponential/2603-product-management-ai-exponential-bilingual.md) | ★★★ | 指数曲线上做产品管理 |
+| 2026-04-29 | [Product development in the agentic era](https://claude.com/blog/product-development-in-the-agentic-era) | [Agentic 时代的产品开发](/02-agent/04-claude/2604-product-development-agentic-era/2604-product-development-agentic-era-bilingual.md) | ★★★ | agent 时代的产品开发范式 |
+| 2026-05-14 | [The founder's playbook: Building an AI-native startup](https://claude.com/blog/the-founders-playbook) | [创始人手册：打造 AI 原生初创公司](/02-agent/04-claude/2605-founders-playbook/2605-founders-playbook-bilingual.md) | ★★★ | AI 原生创业手册 |
+
+（Claude 区共 72 篇已译，完整清单与星级见[文章登记总表](/02-agent/04-claude/claude-blog.md)）

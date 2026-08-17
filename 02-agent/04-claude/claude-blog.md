@@ -1,6 +1,6 @@
 # Claude 产品博客（claude.com/blog）文章清单
 
-> 来源：https://claude.com/blog/ （sitemap 全量 212 篇，2023-08 至 2026-08；本清单筛选出 73 篇有阅读价值的文章，新手教程、纯功能公告、营销稿已忽略）
+> 来源：https://claude.com/blog/ （sitemap 全量 212 篇，2023-08 至 2026-08；本清单筛选出 72 篇有阅读价值的文章，新手教程、纯功能公告、营销稿已忽略）
 > 抓取日期：2026-08-16
 > 说明：与 `03-anthropic/anthropic-engineering.md`（Anthropic 工程博客）互补，此处为 Claude 产品侧内容
 > 翻译登记：完成后在「中英文版本」列填 `[[YYMM-slug-bilingual|中英对照]]`
@@ -97,15 +97,15 @@
 | 2026-07-06 | [A field guide to Claude Fable 5: Finding your unknowns](https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns) | ★★★ | Fable 5 使用心法：用模型发现你的未知 | [[2607-fable-field-guide-bilingual\|中英对照]] |  |
 | 2026-06-10 | [The evolution of agentic surfaces: building with Claude Managed Agents](https://claude.com/blog/building-with-claude-managed-agents) | ★★★ | agentic surfaces 演进论：Managed Agents 的产品思想 | [[2606-agentic-surfaces-managed-agents-bilingual\|中英对照]] |  |
 | 2026-06-05 | [The Claude Cowork product guide](https://claude.com/blog/the-claude-cowork-product-guide) | ★★★ | Cowork 产品全景指南 | [[2606-cowork-product-guide-bilingual\|中英对照]] |  |
-| 2026-05-19 | [New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration](https://claude.com/blog/new-in-claude-managed-agents) | ★★★ | Managed Agents 更新：dreaming/outcomes/多智能体编排 |  |  |
-| 2026-05-19 | [New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates) | ★★★ | Managed Agents 更新：自托管沙箱与 MCP 隧道 |  |  |
-| 2026-04-23 | [Built-in memory for Claude Managed Agents](https://claude.com/blog/claude-managed-agents-memory) | ★★★ | Managed Agents 内置记忆 |  |  |
-| 2026-04-08 | [Claude Managed Agents: get to production 10x faster](https://claude.com/blog/claude-managed-agents) | ★★★★ | Managed Agents 发布：宣称 10 倍速度上生产的新产品形态 |  |  |
-| 2026-03-23 | [Put Claude to work on your computer](https://claude.com/blog/dispatch-and-computer-use) | ★★★ | Dispatch 与 computer use 功能 |  |  |
-| 2025-10-31 | [What is Model Context Protocol? Connect AI to your world](https://claude.com/blog/what-is-model-context-protocol) | ★★★★ | MCP 官方科普：AI 如何连接外部世界 |  |  |
-| 2025-10-16 | [Introducing Agent Skills](https://claude.com/blog/skills) | ★★★★★ | Agent Skills 发布：Claude 生态最关键的扩展机制（即本库 yz-* skill 用的那套） |  |  |
-| 2025-09-11 | [Bringing memory to Claude](https://claude.com/blog/memory) | ★★★ | 记忆功能发布 |  |  |
-| 2025-04-15 | [Claude takes research to new places](https://claude.com/blog/research) | ★★★ | Research 深度研究功能 |  |  |
+| 2026-05-19 | [New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration](https://claude.com/blog/new-in-claude-managed-agents) | ★★★ | Managed Agents 更新：dreaming/outcomes/多智能体编排 | [[2605-new-in-managed-agents-bilingual\|中英对照]] |  |
+| 2026-05-19 | [New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates) | ★★★ | Managed Agents 更新：自托管沙箱与 MCP 隧道 | [[2605-managed-agents-sandboxes-tunnels-bilingual\|中英对照]] |  |
+| 2026-04-23 | [Built-in memory for Claude Managed Agents](https://claude.com/blog/claude-managed-agents-memory) | ★★★ | Managed Agents 内置记忆 | [[2604-managed-agents-memory-bilingual\|中英对照]] |  |
+| 2026-04-08 | [Claude Managed Agents: get to production 10x faster](https://claude.com/blog/claude-managed-agents) | ★★★★ | Managed Agents 发布：宣称 10 倍速度上生产的新产品形态 | [[2604-claude-managed-agents-bilingual\|中英对照]] |  |
+| 2026-03-23 | [Put Claude to work on your computer](https://claude.com/blog/dispatch-and-computer-use) | ★★★ | Dispatch 与 computer use 功能 | [[2603-dispatch-and-computer-use-bilingual\|中英对照]] |  |
+| 2025-10-31 | [What is Model Context Protocol? Connect AI to your world](https://claude.com/blog/what-is-model-context-protocol) | ★★★★ | MCP 官方科普：AI 如何连接外部世界 | [[2510-what-is-mcp-bilingual\|中英对照]] |  |
+| 2025-10-16 | [Introducing Agent Skills](https://claude.com/blog/skills) | ★★★★★ | Agent Skills 发布：Claude 生态最关键的扩展机制（即本库 yz-* skill 用的那套） | [[2510-introducing-agent-skills-bilingual\|中英对照]] |  |
+| 2025-09-11 | [Bringing memory to Claude](https://claude.com/blog/memory) | ★★★ | 记忆功能发布 | [[2509-bringing-memory-to-claude-bilingual\|中英对照]] |  |
+| 2025-04-15 | [Claude takes research to new places](https://claude.com/blog/research) | ★★★ | Research 深度研究功能 | [[2504-claude-research-bilingual\|中英对照]] |  |
 
 ## 六、行业趋势与组织
 
@@ -113,11 +113,11 @@
 
 | 发布时间 | 文章标题 | 重要程度 | 主要看点 | 中英文版本 | 总结 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-05-14 | [The founder's playbook: Building an AI-native startup](https://claude.com/blog/the-founders-playbook) | ★★★ | AI 原生创业手册 |  |  |
-| 2026-04-29 | [Product development in the agentic era](https://claude.com/blog/product-development-in-the-agentic-era) | ★★★ | agent 时代的产品开发范式 |  |  |
-| 2026-03-19 | [Product management on the AI exponential ](https://claude.com/blog/product-management-on-the-ai-exponential) | ★★★ | 指数曲线上做产品管理 |  |  |
-| 2026-01-21 | [Eight trends defining how software gets built in 2026](https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026) | ★★★★ | 2026 软件构建八大趋势（年度必读） |  |  |
-| 2025-12-09 | [How enterprises are building AI agents in 2026](https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026) | ★★★ | 企业构建 AI agent 的现状调查 |  |  |
+| 2026-05-14 | [The founder's playbook: Building an AI-native startup](https://claude.com/blog/the-founders-playbook) | ★★★ | AI 原生创业手册 | [[2605-founders-playbook-bilingual\|中英对照]] |  |
+| 2026-04-29 | [Product development in the agentic era](https://claude.com/blog/product-development-in-the-agentic-era) | ★★★ | agent 时代的产品开发范式 | [[2604-product-development-agentic-era-bilingual\|中英对照]] |  |
+| 2026-03-19 | [Product management on the AI exponential ](https://claude.com/blog/product-management-on-the-ai-exponential) | ★★★ | 指数曲线上做产品管理 | [[2603-product-management-ai-exponential-bilingual\|中英对照]] |  |
+| 2026-01-21 | [Eight trends defining how software gets built in 2026](https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026) | ★★★★ | 2026 软件构建八大趋势（年度必读） | [[2601-eight-trends-2026-bilingual\|中英对照]] |  |
+| 2025-12-09 | [How enterprises are building AI agents in 2026](https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026) | ★★★ | 企业构建 AI agent 的现状调查 | [[2512-enterprises-building-ai-agents-2026-bilingual\|中英对照]] |  |
 
 ---
 
